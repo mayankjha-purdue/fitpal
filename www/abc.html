@@ -1,0 +1,708 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<base href="_w_beef11e7/">
+    <script type="text/javascript">
+(function() {
+  var workerId = '_w_beef11e7';
+  // remove base href if worker ID is in url
+  if (window.location.href.indexOf(workerId) > 0) {
+    document.querySelector('base').removeAttribute('href');
+  }
+})();
+</script>
+
+      <script type="text/javascript">
+      var __connect = {
+        shinyPre101: false
+      }
+      </script>
+      
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <script type="application/shiny-singletons">b8d79706b067e925accf37c2d5d6cf4524fed520</script>
+  <script type="application/html-dependencies">json2[2014.02.04];jquery[1.12.4];shiny[1.2.0];ionrangeslider[2.1.6];strftime[0.9.2];htmlwidgets[1.3];leaflet[1.3.1];leafletfix[1.0.0];Proj4Leaflet[1.0.1];rstudio_leaflet[1.3.1];leaflet-binding[2.0.2];plotly-binding[4.8.0];shinyBS[0.61];datatables-css[0.0.0];datatables-binding[0.5];crosstalk[1.0.0];bootstrap[3.3.7]</script>
+<script src="shared/json2-min.js"></script>
+<script src="shared/jquery.min.js"></script>
+<link href="shared/shiny.css" rel="stylesheet" />
+<script src="shared/shiny.min.js"></script>
+<link href="shared/ionrangeslider/css/ion.rangeSlider.css" rel="stylesheet" />
+<link href="shared/ionrangeslider/css/ion.rangeSlider.skinShiny.css" rel="stylesheet" />
+<script src="shared/ionrangeslider/js/ion.rangeSlider.min.js"></script>
+<script src="shared/strftime/strftime-min.js"></script>
+<script src="htmlwidgets-1.3/htmlwidgets.js"></script>
+<link href="leaflet-1.3.1/leaflet.css" rel="stylesheet" />
+<script src="leaflet-1.3.1/leaflet.js"></script>
+<link href="leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
+<script src="Proj4Leaflet-1.0.1/proj4-compressed.js"></script>
+<script src="Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+<link href="rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
+<script src="leaflet-binding-2.0.2/leaflet.js"></script>
+<script src="plotly-binding-4.8.0/plotly.js"></script>
+<link href="sbs/shinyBS.css" rel="stylesheet" />
+<script src="sbs/shinyBS.js"></script>
+<link href="datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+<script src="datatables-binding-0.5/datatables.js"></script>
+<link href="crosstalk-1.0.0/css/crosstalk.css" rel="stylesheet" />
+<script src="crosstalk-1.0.0/js/crosstalk.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="shared/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+<script src="shared/bootstrap/js/bootstrap.min.js"></script>
+<script src="shared/bootstrap/shim/html5shiv.min.js"></script>
+<script src="shared/bootstrap/shim/respond.min.js"></script>  <title>Intelligentsia</title>
+  <link rel="stylesheet" type="text/css" href="style.css"/>
+  <link rel="stylesheet" type="text/css" href="plugins/font-awesome-4.7.0/css/font-awesome.min.css"/>
+  <link rel="icon" type="image/png" href="images/logo_icon.png"/>
+  <style>.shinyjs-hide { display: none !important; }</style>
+  <script>Shiny.addCustomMessageHandler('shinyjs-show', function(params) { shinyjs.debugMessage('shinyjs: calling function "show" with parameters:'); shinyjs.debugMessage(params); shinyjs.show(params);});
+Shiny.addCustomMessageHandler('shinyjs-hide', function(params) { shinyjs.debugMessage('shinyjs: calling function "hide" with parameters:'); shinyjs.debugMessage(params); shinyjs.hide(params);});
+Shiny.addCustomMessageHandler('shinyjs-toggle', function(params) { shinyjs.debugMessage('shinyjs: calling function "toggle" with parameters:'); shinyjs.debugMessage(params); shinyjs.toggle(params);});
+Shiny.addCustomMessageHandler('shinyjs-enable', function(params) { shinyjs.debugMessage('shinyjs: calling function "enable" with parameters:'); shinyjs.debugMessage(params); shinyjs.enable(params);});
+Shiny.addCustomMessageHandler('shinyjs-disable', function(params) { shinyjs.debugMessage('shinyjs: calling function "disable" with parameters:'); shinyjs.debugMessage(params); shinyjs.disable(params);});
+Shiny.addCustomMessageHandler('shinyjs-toggleState', function(params) { shinyjs.debugMessage('shinyjs: calling function "toggleState" with parameters:'); shinyjs.debugMessage(params); shinyjs.toggleState(params);});
+Shiny.addCustomMessageHandler('shinyjs-addClass', function(params) { shinyjs.debugMessage('shinyjs: calling function "addClass" with parameters:'); shinyjs.debugMessage(params); shinyjs.addClass(params);});
+Shiny.addCustomMessageHandler('shinyjs-removeClass', function(params) { shinyjs.debugMessage('shinyjs: calling function "removeClass" with parameters:'); shinyjs.debugMessage(params); shinyjs.removeClass(params);});
+Shiny.addCustomMessageHandler('shinyjs-toggleClass', function(params) { shinyjs.debugMessage('shinyjs: calling function "toggleClass" with parameters:'); shinyjs.debugMessage(params); shinyjs.toggleClass(params);});
+Shiny.addCustomMessageHandler('shinyjs-html', function(params) { shinyjs.debugMessage('shinyjs: calling function "html" with parameters:'); shinyjs.debugMessage(params); shinyjs.html(params);});
+Shiny.addCustomMessageHandler('shinyjs-onevent', function(params) { shinyjs.debugMessage('shinyjs: calling function "onevent" with parameters:'); shinyjs.debugMessage(params); shinyjs.onevent(params);});
+Shiny.addCustomMessageHandler('shinyjs-alert', function(params) { shinyjs.debugMessage('shinyjs: calling function "alert" with parameters:'); shinyjs.debugMessage(params); shinyjs.alert(params);});
+Shiny.addCustomMessageHandler('shinyjs-logjs', function(params) { shinyjs.debugMessage('shinyjs: calling function "logjs" with parameters:'); shinyjs.debugMessage(params); shinyjs.logjs(params);});
+Shiny.addCustomMessageHandler('shinyjs-runjs', function(params) { shinyjs.debugMessage('shinyjs: calling function "runjs" with parameters:'); shinyjs.debugMessage(params); shinyjs.runjs(params);});
+Shiny.addCustomMessageHandler('shinyjs-reset', function(params) { shinyjs.debugMessage('shinyjs: calling function "reset" with parameters:'); shinyjs.debugMessage(params); shinyjs.reset(params);});
+Shiny.addCustomMessageHandler('shinyjs-delay', function(params) { shinyjs.debugMessage('shinyjs: calling function "delay" with parameters:'); shinyjs.debugMessage(params); shinyjs.delay(params);});
+Shiny.addCustomMessageHandler('shinyjs-click', function(params) { shinyjs.debugMessage('shinyjs: calling function "click" with parameters:'); shinyjs.debugMessage(params); shinyjs.click(params);});</script>
+  <script src="shinyjs/shinyjs-default-funcs.js"></script>
+  <script>shinyjs.debug = false;</script>
+  <link rel="stylesheet" type="text/css" href="plugins/carousel.css"/>
+  <script src="plugins/holder.js"></script>
+
+<script src="__assets__/sockjs-0.3.min.js"></script>
+<script src="__assets__/shiny-server-client.min.js"></script>
+<script>preShinyInit({reconnect:true,reconnectTimeout:15000,disableProtocols:["xdr-streaming","xdr-polling","websocket"],transportDebugging:false,token:true,workerId:true,subappTag:true,extendSession:true,fixupInternalLinks:true});</script>
+<link rel="stylesheet" type="text/css" href="__assets__/rstudio-connect.css"/>
+</head>
+
+<body>
+<script type="text/javascript" src="/__static__/components/iframe-resizer/js/iframeResizer.contentWindow.min.js"></script>
+<script type="text/javascript" src="/__static__/frontend/scripts/shinyapps.frame.content.js"></script>
+<script type="text/javascript" src="/__static__/frontend/scripts/shinyapps.js"></script>
+
+  <nav class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-5190">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <span class="navbar-brand">Intelligentsia</span>
+      </div>
+      <div class="navbar-collapse collapse" id="navbar-collapse-5190">
+        <ul class="nav navbar-nav" data-tabsetid="3726">
+          <li class="active">
+            <a href="#tab-3726-1" data-toggle="tab" data-value="Home">Home</a>
+          </li>
+          <li>
+            <a href="#tab-3726-2" data-toggle="tab" data-value="Neighborhood Browser">Neighborhood Browser</a>
+          </li>
+          <li>
+            <a href="#tab-3726-3" data-toggle="tab" data-value="Location Comparison">Location Comparison</a>
+          </li>
+          <li>
+            <a href="#tab-3726-4" data-toggle="tab" data-value="About">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <div class="tab-content" data-tabsetid="3726">
+      <div class="tab-pane active" data-value="Home" id="tab-3726-1">
+        <!-- Carousel
+================================================== -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+  <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="images/bg1.jpg" alt="1">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1 class="fit-head">Looking for a particular area?</h1>
+          <p class="fit-text">Use Intelligentsia&rsquo;s interactive map to identify pockets of opportunity.</p>
+          <p>
+            <a class="btn btn-lg btn-primary" onclick="$('li:eq(1) a').tab('show');" role="button">Get started now &raquo;</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <img src="images/bg2.jpg" alt="2">
+      <div class="container">
+  <div class="carousel-caption">
+    <h1 class="fit-head">Compare your investment options</h1>
+    <p class="fit-text">You have already identified a few locations and want to compare them?</p>
+    <a class="btn btn-lg btn-primary" onclick="$('li:eq(2) a').tab('show');" role="button">Get started now &raquo;</a>
+    <!-- <p>
+      <form>
+        <div class="form-group">
+          <input id="addr1" type="text" class="form-control" placeholder="Search now...">
+          <input id="addr2" type="text" class="form-control" placeholder="Search now...">
+        </div>
+      </form>
+    </p> -->
+  </div>
+      </div>
+    </div>
+    <div class="item">
+      <img src="images/bg4.jpg" alt="3">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1 class="fit-head">Identify new opportunities</h1>
+          <p class="fit-text">You want to invest into real estate, but don&rsquo;t know where?</p>
+          <p>
+            <a class="btn btn-lg btn-primary" onclick="$('li:eq(1) a').tab('show');" role="button">Get started now &raquo;</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+</div>
+<!-- /.carousel -->
+
+<div class="container marketing">
+  <!-- Three columns of text below the carousel -->
+  <div class="row">
+  <div class="container">
+    <h1 class="text-center fit-h1" style="font-size: 4em; margin-bottom: 30px;">We got you covered!</h1>
+  </div>
+  </div>
+
+  <div class="row app-links">
+  <div class="col-md-4">
+    <img src="images/novice-01.png" width="50%" alt="novice">
+    <h2>Novice<br>investors</h2>
+    <p>You are new to real estate investment or new to New York City? We are here to help you out!</p>
+    <a class="btn btn-primary" onclick="$('li:eq(1) a').tab('show');" role="button">View top neighborhoods &raquo;</a>
+  </div><!-- /.col-md-4 -->
+  <div class="col-md-4">
+    <img src="images/veteran-01.png" width="50%" alt="veteran">
+    <h2>Veteran investors</h2>
+    <p>You have invested your money into real estate before, but want to identify new opportunities?</p>
+    <a class="btn btn-primary" onclick="$('li:eq(1) a').tab('show');" role="button">View top neighborhoods &raquo;</a>
+  </div><!-- /.col-md-4 -->
+  <div class="col-md-4">
+    <img src="images/evaluator-01.png" width="50%" alt="evaluator">
+    <h2>Location Evaluators</h2>
+    <p>You have identified a few interesting investment opportunities and want to make your final decision?</p>
+    <a class="btn btn-primary" onclick="$('li:eq(3) a').tab('show');" role="button">Compare locations &raquo;</a>
+  </div><!-- /.col-md-4 -->
+  </div><!-- /.row -->
+
+
+  <!-- START THE FEATURETTES -->
+
+  <hr class="featurette-divider">
+
+  <div class="row featurette center-on-xs">
+  <div class="col-md-5 col-md-push-7">
+    <img class="featurette-image img-responsive" src="images/data.jpg" alt = "">
+  </div>
+  <div class="col-md-7 col-md-pull-5">
+    <h2 class="featurette-heading">Intelligentsia.<br><span class="text-muted">Data-driven real estate evaluation</span></h2>
+    <p class="lead">Many cities across the world are experiencing a phenomenom known as &ldquo;gentrification&rdquo;. From a sociological perspective, gentrification raises questions about the displacement
+and &ldquo;pricing out&rdquo; of native residents, however, for real estate investors, it would appear to be
+a ripe opportunity for profit. As it turns out, this phenomenon can also be witnessed by understanding neighborhood demographics and other factors for which data are abound. <a data-toggle="collapse" data-parent="#accordionOne" href="#collapseOne">Read more&hellip;</a></p>
+     <div class="panel-group transparent-panel-group" id="accordionOne">
+        <div class="panel panel-default">
+          <div id="collapseOne" class="panel-collapse collapse">
+            <div class="panel-body text-left">
+              <blockquote class="blockquote">&ldquo;One by one, many of the working class quarters have been invaded by the middle class–upper and lower… Once this process of ‘gentrification’ starts in a district it goes on rapidly until all or most of the working class occupiers are displaced and the whole social character of the district is changed.&rdquo; (Glass, 1964)</blockquote>
+              <p>This change of social character is articulated more precisely in contemporary definitions of gentrification, which point to a spectrum of neighborhood changes including rising incomes (Kolko, 2007), increased renovations (Hammel and Wyly, 1996), higher education levels (Ley, 1986) and elevated housing prices (Freeman, 2005). Although definitions of gentrification vary in their exact specifications (Barton, 2014), the term is generally used to describe a core underlying pattern: the migration of wealthier residents and more upscale businesses into less-affluent urban areas. As a result of this movement, the fundamental complexion of the neighborhood is transformed: demographics shift, the physical of the area characteristics evolve, and most notably, housing prices rise (Maciag, 2015).</p>
+              <p>Varying degrees of this phenomenon have been observed in a number of cities across the U.S.: Portland, OR; Denver, CO; Charleston, SC and Austin, TX to name a few (Pan, 2017). New York City has also seen its share of gentrifying neighborhoods in the last decade: In the period 2011 to early 2017, nine NYC regions with a starting estimated price per square foot under $500 saw appreciation above 50% in a five year period.</p>
+              <p>From a sociological perspective, gentrification raises questions about the displacement and “pricing out” of native residents, however, for real estate investors, it would appear to be a ripe opportunity for profit. Anecdotal stories of owners receiving double or even triple the values of their original investment are common (Cardwell, 2011).</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <div class="row featurette center-on-xs">
+  <div class="col-md-5">
+    <img class="featurette-image img-responsive" src="images/analysis.png" alt = "">
+  </div>
+  <div class="col-md-7">
+    <h2 class="featurette-heading">We <i class="fa fa-heart" style="color:#bf2604;"></i> Data.<br><span class="text-muted">We really, really do</span></h2>
+    <p class="lead">We analyzed billions of data points so you don&rsquo;t have to! <a data-toggle="collapse" data-parent="#accordionTwo" href="#collapseTwo">Read more&hellip;</a></p>
+     <div class="panel-group transparent-panel-group" id="accordionTwo">
+        <div class="panel panel-default">
+          <div id="collapseTwo" class="panel-collapse collapse">
+            <div class="panel-body text-left">
+              <p>The objective of Intelligentsia is to provide residential real estate investors with a home value appreciation forecast for neighborhoods within New York City. Our solution ranks NYC census tracts by <em>likelihood of gentrification, defined as a 20%+ gain in median home value over a two (and three) year period</em>. The model is designed for use on census tracts with a <em>starting median home value less than or equal to $500,000</em>. These parameter values were selected to address both the shortfalls of existing real estate tools as well as to address the interests of our target audience:</p>
+              <ul>
+                <li><em>Census tracts</em> are small enough to distinguish distinctive area characteristics and are not addressed by existing forecasting solutions (such as Case-Shiller)</li>
+                <li><em>Median home value</em> data covered more census tracts than other measures (such as cost per square foot) and therefore open up more new investment opportunities</li>
+                <li>A <em>20%+ gain in median home value</em> represents the minimum return that must be attained to recoup transaction costs on a $500,000 investment</li>
+                <li>The <em>2- and 3-year forecast windows</em> were the shortest time period in which a viable number of census tracts saw 20%+ gain in median home value</li>
+              </ul>
+              <p>A plethora of data were acquired and analyzed to create the Intelligentsia model. Among those data sets are:</p>
+              <ul>
+                <li>Retail environment data: Yelp ratings</li>
+                <li>Transportation data: NYC TLC taxicab trips, NYC Subway network and stations, residents&rsquo; travel time to work</li>
+                <li>Quality of life: Number and location of trees (NYC Open Data), Crime complaints (NYPD)</li>
+                <li>Online data: Edits of Wikipedia neighborhood articles, Google Search Trends</li>
+                <li>Housing: Median home value, gross rent, year structure built (Zillow, ACS/Census)</li>
+                <li>Demographics: Median income, age, education, poverty, employment (ACS/Census)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <div class="row featurette center-on-xs">
+    <div class="col-md-5 col-md-push-7">
+      <img class="featurette-image img-responsive" src="images/group_photo.jpg" alt = "">
+    </div>
+    <div class="col-md-7 col-md-pull-5">
+      <h2 class="featurette-heading">Introducting Intelligentsia.<br><span class="text-muted">This is us!</span></h2>
+      <p class="lead">This website, the data and the gentrification model are the result of the capstone project of team &ldquo;Intelligentsia&rdquo;, Class of 2017 of the MSBA program at New York University Stern School of Business. <a href="#" onclick="$('li:eq(3) a').tab('show');">Read more about us&hellip;</a></p>
+    </div>
+  </div>
+
+</div>
+<!-- /END THE FEATURETTES -->
+        <script src="plugins/scripts.js"></script>
+      </div>
+      <div class="tab-pane" data-value="Neighborhood Browser" id="tab-3726-2">
+        <div class="container">
+          <h1 class="title fit-h1">Neighborhood Browser</h1>
+          <p>You are new to New York City or real estate investment? Use Intelligentsia's neighborhood browser to identify pockets of opportunity in the city.</p>
+          <p>Use the map to browse New York City's gentrifying census tracts. Click on any one of them to get more detailed information. Use the slider to show only the top k tracts.</p>
+          <div class="row">
+            <div class="col-sm-7">
+              <div class="form-group shiny-input-container" style="width: 100%;">
+                <label class="control-label" for="topK">Show top k census tracts</label>
+                <input class="js-range-slider" id="topK" data-min="10" data-max="884" data-from="50" data-step="10" data-grid="true" data-grid-num="9.71111111111111" data-grid-snap="false" data-prettify-separator="," data-prettify-enabled="true" data-keyboard="true" data-data-type="number"/>
+              </div>
+              <div id="map" style="width:100%; height:600px; " class="leaflet html-widget html-widget-output"></div>
+            </div>
+            <div class="col-sm-5 hood-info shinyjs-hide" id="reactiveOutput1">
+              <h1 class="heading">
+                <div id="hood" class="shiny-text-output"></div>
+              </h1>
+              <div id="hoodInfo" class="shiny-html-output"></div>
+            </div>
+          </div>
+          <div class="kpi-group shinyjs-hide">
+            <div class="row" style="margin-top: 10px;" id="reactiveOutput2a">
+              <div class="col-sm-3">
+                <div align="center">
+                  <div id="donut" style="width:100%; height:100%; " class="plotly html-widget html-widget-output shiny-report-size"></div>
+                </div>
+                <h3 class="kpi-name">Intelligentsia Score</h3>
+              </div>
+              <div class="col-sm-3">
+                <h2 class="kpi">
+                  <div id="kpi1" class="shiny-text-output"></div>
+                </h2>
+                <h3 class="kpi-name">Median Home Value</h3>
+              </div>
+              <div class="col-sm-3">
+                <h2 class="kpi">
+                  <div id="kpi2" class="shiny-text-output"></div>
+                </h2>
+                <h3 class="kpi-name">Median Housing Cost</h3>
+              </div>
+              <div class="col-sm-3">
+                <h2 class="kpi">
+                  <div id="kpi3" class="shiny-text-output"></div>
+                </h2>
+                <h3 class="kpi-name">Year built (median)</h3>
+              </div>
+            </div>
+            <div class="row" id="reactiveOutput2b">
+              <div class="col-sm-3">
+                <h2 class="kpi">
+                  <div id="kpi4" class="shiny-text-output"></div>
+                </h2>
+                <h3 class='kpi-name'>Avg. Yelp Rating<sup>1</sup></h3>
+              </div>
+              <div class="col-sm-3">
+                <h2 class="kpi">
+                  <div id="kpi5" class="shiny-text-output"></div>
+                </h2>
+                <h3 class='kpi-name'>Walkability Index<sup>2</sup></h3>
+              </div>
+              <div class="col-sm-3">
+                <h2 class="kpi">
+                  <div id="kpi6" class="shiny-text-output"></div>
+                </h2>
+                <h3 class='kpi-name'># of Trees<sup>3</sup></h3>
+              </div>
+              <div class="col-sm-3">
+                <h2 class="kpi">
+                  <div id="kpi7" class="shiny-text-output"></div>
+                </h2>
+                <h3 class='kpi-name'>% Share of Taxicab Rides at Night<sup>4</sup></h3>
+              </div>
+            </div>
+            <div class="row" id="reactiveOutput2c">
+              <div class="col-sm-3">
+                <h2 class="kpi">
+                  <div id="kpi8" class="shiny-text-output"></div>
+                </h2>
+                <h3 class="kpi-name">% College Education</h3>
+              </div>
+              <div class="col-sm-3">
+                <h2 class="kpi">
+                  <div id="kpi9" class="shiny-text-output"></div>
+                </h2>
+                <h3 class="kpi-name">Median Age</h3>
+              </div>
+              <div class="col-sm-3">
+                <h2 class="kpi">
+                  <div id="kpi10" class="shiny-text-output"></div>
+                </h2>
+                <h3 class="kpi-name">% Family Households</h3>
+              </div>
+              <div class="col-sm-3">
+                <h2 class="kpi">
+                  <div id="kpi11" class="shiny-text-output"></div>
+                </h2>
+                <h3 class="kpi-name">% Crime</h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <small>Sources: U.S. Census Bureau, 1. Yelp, 2. BEH, 3. NYC Open Data, 4. NYC TLC</small>
+              </div>
+            </div>
+          </div>
+          <hr class="shinyjs-hide"/>
+          <div class="row shinyjs-hide" id="reactiveOutput3">
+            <div class="col-sm-12">
+              <h2>Development of real estate prices</h2>
+              <div align="center" class="chart" width="100%">
+                <div id="zillow1" style="width:100%; height:400px; " class="plotly html-widget html-widget-output shiny-report-size"></div>
+              </div>
+            </div>
+          </div>
+          <hr class="shinyjs-hide"/>
+          <div class="row shinyjs-hide" id="reactiveOutput4">
+            <div class="col-sm-12">
+              <h2>Yelp reviews over time</h2>
+              <div align="center" class="chart">
+                <div id="yelp" style="width:100%; height:420px; " class="plotly html-widget html-widget-output shiny-report-size"></div>
+              </div>
+            </div>
+          </div>
+          <hr class="shinyjs-hide"/>
+          <div class="row shinyjs-hide" id="reactiveOutput4a1">
+            <div class="col-sm-12">
+              <h2>Online Activities</h2>
+            </div>
+          </div>
+          <div class="row shinyjs-hide" id="reactiveOutput4a">
+            <div class="col-sm-6">
+              <h3>Google Search Trends</h3>
+              <div align="center" class="chart">
+                <div id="google" style="width:100%; height:400px; " class="plotly html-widget html-widget-output shiny-report-size"></div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <h3>Wikipedia Edits</h3>
+              <div align="center" class="chart">
+                <div id="wiki" style="width:100%; height:400px; " class="plotly html-widget html-widget-output shiny-report-size"></div>
+              </div>
+            </div>
+          </div>
+          <hr class="shinyjs-hide"/>
+          <div class="row shinyjs-hide" id="reactiveOutput5">
+            <div class="col-sm-12">
+              <h2>Taxi trips over time</h2>
+              <div align="center" class="chart">
+                <div id="taxi" style="width:100%; height:400px; " class="plotly html-widget html-widget-output shiny-report-size"></div>
+              </div>
+            </div>
+          </div>
+          <hr class="shinyjs-hide"/>
+          <div class="row shinyjs-hide" id="reactiveOutput6">
+            <div class="col-sm-12">
+              <h2>Properties currently for sale on Zillow</h2>
+              <div class="property-card-container">
+                <div id="propertiesForSale" class="shiny-html-output"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="top-link-block" class="hidden">
+    <a href="#top" class="well well-sm" onclick="$('html,body').animate({scrollTop:330},'slow');return false;">
+        <i class="glyphicon glyphicon-chevron-up"></i> Back to top
+    </a>
+</div><!-- /top-link-block -->
+
+<script type="text/javascript">
+// Only enable if the document has a long scroll bar
+// Note the window height + offset
+if ( ($(window).height() + 100) < $(document).height() ) {
+  $('#top-link-block').removeClass('hidden').affix({
+      // how far to scroll down before link "slides" into view
+      offset: {top:1400}
+  });
+}
+</script>
+      </div>
+      <div class="tab-pane" data-value="Location Comparison" id="tab-3726-3">
+        <div class="container">
+          <h1 class="title fit-h1">Location Comparison</h1>
+          <p>You have already identified two locations of interest, but cannt decide which one to invest in? Let us help make your final decision.</p>
+          <p>Enter the addresses of two properties below and click the button to compare the locations in terms of gentrification potential.</p>
+          <p>Click the button to compare two sample locations or enter search addresses of your own!</p>
+          <p>Using the buttons above the map, you can also show the location of nearby schools, subway stations and places on Yelp.</p>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="addrSearch search">
+                <div class="form-group shiny-input-container">
+                  <input id="searchAddr1" type="text" class="form-control" value="20 Gerry St, New York" placeholder="Enter address..."/>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 text-center">
+              <button class="btn btn-default action-button btn-primary shinyjs-disabled" id="compare" style="width: 75%; margin: 20px 0 20px 0;" type="button">&laquo; Compare locations &raquo;</button>
+            </div>
+            <div class="col-sm-4">
+              <div class="addrSearch search">
+                <div class="form-group shiny-input-container">
+                  <input id="searchAddr2" type="text" class="form-control" value="1862 Cornelia St, New York" placeholder="Enter address..."/>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="mapControls" class="shinyjs-hide">
+            <div class="row" style="margin-bottom: 15px; text-align: center;">
+              <div class="col-sm-12">
+                <button id="showLayerSchools" type="button" class="btn sbs-toggle-button btn-info btn-sm">Schools</button>
+                <button id="showLayerSubway" type="button" class="btn sbs-toggle-button btn-info btn-sm">Subway</button>
+                <button id="showLayerYelp" type="button" class="btn sbs-toggle-button btn-info btn-sm">Yelp</button>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <div id="reactiveOutput7a" class="shinyjs-hide">
+                <div id="mapLocation1" style="width:100%; height:400px; " class="leaflet html-widget html-widget-output"></div>
+                <div class='legend-custom'>
+               <div class='legend-group'>
+                   <div class='legend-element-label' color='location'></div>
+                   <div class='legend-element-name'>Property</div>
+               </div>
+               <div class='legend-group'>
+                   <div class='legend-element-label' color='yelp'></div>
+                   <div class='legend-element-name'>Yelp</div>
+               </div>
+               <div class='legend-group'>
+                   <div class='legend-element-label' color='schools'></div>
+                   <div class='legend-element-name'>Schools</div>
+               </div>
+           </div>
+                <h2>
+                  <div id="hoodName1" class="shiny-text-output"></div>
+                </h2>
+                <p style="height: 60px;">
+                  <span id="iScore1" class="shiny-text-output"></span>
+                </p>
+                <div id="hood-details1">
+                  <h4>Monthly development of real estate prices</h4>
+                  <div id="zillowLocation1" style="width:100%; height:150px; " class="plotly html-widget html-widget-output shiny-report-size"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div id="reactiveOutput7b" class="shinyjs-hide">
+                <div id="mapLocation2" style="width:100%; height:400px; " class="leaflet html-widget html-widget-output"></div>
+                <div class='legend-custom'>
+               <div class='legend-group'>
+                   <div class='legend-element-label' color='location'></div>
+                   <div class='legend-element-name'>Property</div>
+               </div>
+               <div class='legend-group'>
+                   <div class='legend-element-label' color='yelp'></div>
+                   <div class='legend-element-name'>Yelp</div>
+               </div>
+               <div class='legend-group'>
+                   <div class='legend-element-label' color='schools'></div>
+                   <div class='legend-element-name'>Schools</div>
+               </div>
+           </div>
+                <h2>
+                  <div id="hoodName2" class="shiny-text-output"></div>
+                </h2>
+                <p style="height: 60px;">
+                  <span id="iScore2" class="shiny-text-output"></span>
+                </p>
+                <div id="hood-details2">
+                  <h4>Monthly development of real estate prices</h4>
+                  <div id="zillowLocation2" style="width:100%; height:150px; " class="plotly html-widget html-widget-output shiny-report-size"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <div id="reactiveOutput8" class="shinyjs-hide">
+                <hr/>
+                <h3>Comparison of key demographics</h3>
+                <div id="CTcomparisonChart" style="width:100%; height:750px; " class="plotly html-widget html-widget-output shiny-report-size"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <div id="reactiveOutput9" style="margin-top: 30px; font-size: 1.5em;" class="shinyjs-hide">
+                <hr/>
+                <h3>Values for key demographics and real estate metrics</h3>
+                <div id="CTcomparisonTable" style="width:100%; height:auto; " class="datatables html-widget html-widget-output"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane" data-value="About" id="tab-3726-4">
+        <div class="container">
+  <!-- <h1 class="title fit-h1">Who is Intelligentsia?</h1> -->
+  <div class="row">
+    <div class="col-md-12">
+      <h1 class="title fit-h1">Who is Intelligentsia?</h1>
+    </div>
+  </div>
+  <div class="marketing">
+    <div class="row">
+      <div class="col-md-4">
+        <img class="img-circle" src="images/todd.jpg" alt="">
+        <h2>Todd Applebaum</h2>
+        <p>Data loving and collaborative leader that enjoys team-based environments dedicated to identifying and implementing business solutions that enable teams to deliver superior products, content and service to clients.</p>
+        <a href="https://www.linkedin.com/in/todd-applebaum-0631044b/">LinkedIn</a>
+      </div>
+      <div class="col-md-4">
+        <img class="img-circle" src="images/jon.jpg" alt="">
+        <h2>Jonathan Kuah</h2>
+        <p></p>
+        <a href="https://www.linkedin.com/in/jonathan-kuah-aa604411/">LinkedIn</a>
+      </div>
+      <div class="col-md-4">
+        <img class="img-circle" src="images/kristin.jpg" alt="">
+        <h2>Kristin Phillips</h2>
+        <p></p>
+        <a href="https://www.linkedin.com/in/kristin-phillips-a5b41216/">LinkedIn</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <img class="img-circle" src="images/philipp.jpg" alt="">
+        <h2>Philipp Reiner</h2>
+        <p>I am a creative, self-motivated, hands-on person, challenging conventional thinking, charged with a high degree of curiosity and an insatiable thirst for change. Within the team, I was responsible for most of the data gathering aspects as well as building this Shiny app.</p>
+        <a href="https://www.linkedin.com/in/philipp-reiner-b08a8322/">LinkedIn</a>
+      </div>
+      <div class="col-md-4">
+        <img class="img-circle" src="images/leon.jpg" alt="">
+        <h2>Leon Shim</h2>
+        <p></p>
+        <a href="https://www.linkedin.com/in/leon-shim-9925a8b/">LinkedIn</a>
+      </div>
+      <div class="col-md-4">
+        <img class="img-circle" src="images/kristen.jpg" alt="">
+        <h2>Kristen Sosulski</h2>
+        <p>Dr. Kristen Sosulski Data Visualization Professor, Author, and Speaker As a leading expert on data visualization. She was our capstone advisor and participated on our journey along the MSBA program at NYU Stern.</p>
+        <a href="https://www.linkedin.com/in/sosulski/">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+</div>
+        <style type="text/css">
+          .shiny-output-error { visibility: hidden; }
+          .shiny-output-error:before { visibility: hidden; }
+        </style>
+      </div>
+    </div>
+    <div class="row"><hr>
+
+<div class="container">
+  <img src="images/logo_1-01.png" alt="logo" class="center-block img-responsive" width="300" style="margin-bottom: 80px;" />
+
+  <!-- FOOTER -->
+  <footer>
+  <p class="pull-right"><a href="#">Back to top</a></p>
+  <p>Intelligentsia&mdash;New York University, MSBA Capstone Project&mdash;Class of 2017</p>
+  <p><a href="#" data-toggle="modal" data-target="#modal-credits">Credits &amp; Disclaimer</a></p>
+  </footer>
+
+</div>
+
+<!-- Modal - Credits -->
+<div class="modal fade" id="modal-credits" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+  <div class="modal-header">
+  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+  <h4 class="modal-title" id="myModalLabel">Credits</h4>
+  </div>
+  <div class="modal-body">
+    <p>This website was built using RShiny.</p>
+    <p>Aside from RShiny, it was built using web development frameworks and other resources. They are attributed here.</p>
+    <p>Select symbols used from <a href="http://www.thenounproject.com">The Noun Project</a>:</p>
+    <ul>
+      <li>Dollar by Antonieta Gomez</li>
+      <li>Romper by Made by Made</li>
+      <li>Medal by anbileru adaleru</li>
+    </ul>
+    <p><a href="https://github.com/davatron5000/FitText.js">FitText.js</a></p>
+    <p><a href="http://jquery.com/">jQuery</a></p>
+    <p><a href="http://getbootstrap.com/">Twitter Bootstrap</a></p>
+    <p><a href="http://fontawesome.io/">Font Awesome</a></p>
+    <p>The following R packages were used in to build this RShiny application:</p>
+    <p>
+      <code>base</code><code>dplyr</code><code>jsonlite</code>
+      <code>leaflet</code><code>lubridate</code><code>magrittr</code>
+      <code>padr</code><code>plotly</code><code>purrr</code>
+      <code>raster</code><code>rgdal</code><code>rgeos</code>
+      <code>rvest</code><code>selectr</code><code>shiny</code>
+      <code>shinyjs</code><code>sp</code><code>stringr</code>
+      <code>tidyr</code><code>urltools</code><code>utils</code>
+      <code>xml2</code><code>xts</code><code>zoo</code>
+    </p>
+      <p>This website, the data and the gentrification model are the result of the capstone project of team &ldquo;Intelligentsia&rdquo;, Class of 2017 of the MSBA program at New York University Stern School of Business.</p>
+  </div>
+  <div class="modal-footer">
+  <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+  </div>
+</div><!-- /.modal-content -->
+</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<script src="plugins/fittext_1.2/jquery.fittext.js"></script>
+<script src="plugins/fittext.js"></script>
+
+<script type="text/javascript">
+  jQuery(".fit-h1").fitText(1.2, { minFontSize: '32px', maxFontSize: '38px' });
+  jQuery(".fit-h2").fitText(1.2, { minFontSize: '18px', maxFontSize: '26px' });
+  jQuery(".fit-text").fitText(0.8, { minFontSize: '18px', maxFontSize: '24px' });
+</script></div>
+  </div>
+</body>
+
+</html>

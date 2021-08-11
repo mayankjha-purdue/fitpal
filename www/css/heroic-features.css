@@ -1,0 +1,49 @@
+/*!
+ * Start Bootstrap - Heroic Features (https://startbootstrap.com/template-overviews/heroic-features)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-heroic-features/blob/master/LICENSE)
+ */
+
+body {
+  padding-top: 54px;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+
+.card {
+  height: 100%;
+}
+
+.slug-img {
+	display: inline-block;
+	margin: 20px 30px 0 10px;
+	vertical-align: top;
+
+}
+
+.jumbotron-text .display-3,
+.jumbo-para {
+	color: white;
+	font-weight: bold;
+}
+
+.jumbotron.my-4 {
+	background: url("../img/forest.jpg"); 
+}
+
+.m-0.text-center a{
+	color: white;
+}
+
+.m-0.text-center.text-blue {
+	color: gray;
+}
+
+.jumbotron-text {
+	display: inline-block;
+	justify-content: center;
+}
