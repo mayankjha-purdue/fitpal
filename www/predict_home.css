@@ -56,7 +56,7 @@ p#bruh {
   border-color: transparent;
   border-width: 50px;
   text-align: justify;
-  font-size: 150%;
+  font-size: 190%;
 }
 img#theImage {
   width: 10%;
@@ -177,15 +177,15 @@ header h1,
 header p
 	{letter-spacing:5px;text-shadow:-1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;}
 
-#sticky_nav{
-	background:#032133;
+#nav{
+	background:#236A87;
   opacity: .9;
 	width:100%;
-	top:-45px;
+	top:0px;
 	display:block;
 	position: fixed;
 	z-index:999;
-	transition:all .5s ease;
+
 	}
 
 .btnList
@@ -294,7 +294,7 @@ input[type=text]:focus
 	position: relative;*/
 	}
 .blank{
-  background-color: #032133;
+  background-color: #236A87;
   width:100%;
   min-height:100%;
   display:block;

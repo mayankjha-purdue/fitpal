@@ -1,33 +1,19 @@
-<html style="height: auto;" class=""><head>
-<base href="_w_ec62ec8f/">
-    <script type="text/javascript">
-(function() {
-  var workerId = '_w_ec62ec8f';
-  // remove base href if worker ID is in url
-  if (window.location.href.indexOf(workerId) > 0) {
-    document.querySelector('base').removeAttribute('href');
-  }
-})();
-</script>
 
-      <script type="text/javascript">
-      var __connect = {
-        shinyPre101: false
-      }
-      </script>
-      
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <script type="application/shiny-singletons"></script>
   <script type="application/html-dependencies">jquery[3.5.1];shiny-css[1.6.0];shiny-javascript[1.6.0];font-awesome[5.13.0];selectize[0.12.4];shinyWidgets[0.6.0];jquery-knob[1.2.13];bootstrap-datepicker-js[1.9.0];bootstrap-datepicker-css[1.9.0];bootstrap[3.4.1];AdminLTE[2.0.6];shinydashboard[0.7.1]</script>
 <script src="shared/jquery.min.js"></script>
-<link href="shared/shiny.min.css" rel="stylesheet">
+<link href="shared/shiny.min.css" rel="stylesheet" />
 <script src="shared/shiny.min.js"></script>
-<link href="font-awesome-5.13.0/css/all.min.css" rel="stylesheet">
-<link href="font-awesome-5.13.0/css/v4-shims.min.css" rel="stylesheet">
-<link href="shared/selectize/css/selectize.bootstrap3.css" rel="stylesheet">
+<link href="font-awesome-5.13.0/css/all.min.css" rel="stylesheet" />
+<link href="font-awesome-5.13.0/css/v4-shims.min.css" rel="stylesheet" />
+<link href="shared/selectize/css/selectize.bootstrap3.css" rel="stylesheet" />
 <script src="shared/selectize/js/selectize.min.js"></script>
 <script src="shared/selectize/accessibility/js/selectize-plugin-a11y.min.js"></script>
-<link href="shinyWidgets/shinyWidgets.min.css" rel="stylesheet">
+<link href="shinyWidgets/shinyWidgets.min.css" rel="stylesheet" />
 <script src="shinyWidgets/shinyWidgets-bindings.min.js"></script>
 <script src="shinyWidgets/jquery-knob/jquery.knob.min.js"></script>
 <script src="shared/datepicker/js/bootstrap-datepicker.min.js"></script>
@@ -36,16 +22,16 @@
         $.fn.bsDatepicker = datepicker;
       })();
      </script>
-<link href="shared/datepicker/css/bootstrap-datepicker3.min.css" rel="stylesheet">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="shared/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-<link href="shared/bootstrap/accessibility/css/bootstrap-accessibility.min.css" rel="stylesheet">
+<link href="shared/datepicker/css/bootstrap-datepicker3.min.css" rel="stylesheet" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="shared/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+<link href="shared/bootstrap/accessibility/css/bootstrap-accessibility.min.css" rel="stylesheet" />
 <script src="shared/bootstrap/js/bootstrap.min.js"></script>
 <script src="shared/bootstrap/accessibility/js/bootstrap-accessibility.min.js"></script>
-<link href="AdminLTE-2.0.6/AdminLTE.min.css" rel="stylesheet">
-<link href="AdminLTE-2.0.6/_all-skins.min.css" rel="stylesheet">
+<link href="AdminLTE-2.0.6/AdminLTE.min.css" rel="stylesheet" />
+<link href="AdminLTE-2.0.6/_all-skins.min.css" rel="stylesheet" />
 <script src="AdminLTE-2.0.6/app.min.js"></script>
-<link href="shinydashboard-0.7.1/shinydashboard.css" rel="stylesheet">
+<link href="shinydashboard-0.7.1/shinydashboard.css" rel="stylesheet" />
 <script src="shinydashboard-0.7.1/shinydashboard.min.js"></script>  <title>Fitpal - Fitness Tracker</title>
   <style>
       .main-sidebar, .left-side {
@@ -92,17 +78,9 @@
       }
     </style>
   <style> /* font */ body, label, input, button, select, box, .h1, .h2, .h3, .h4, .h5, h1, h2, h3, h4, h5 {font-family: "Arial";color: rgb(0,0,0); } /* font: fix for h6 */ /* messes up sidebar user section if included above */ .h6, h6 {font-family: "Arial"; } /* sidebar: logo */ .skin-blue .main-header .logo {background: rgb(23,103,124); } /* sidebar: logo hover */ .skin-blue .main-header .logo:hover {background: rgb(23,103,124); } /* sidebar: collapse button*/ .skin-blue .main-header .navbar .sidebar-toggle {background: rgb(238,238,238);color:rgb(75,75,75); } /* sidebar: collapse button hover */ .skin-blue .main-header .navbar .sidebar-toggle:hover {background: rgb(210,210,210);color:rgb(0,0,0); } /* header */ .skin-blue .main-header .navbar {background: rgb(238,238,238);box-shadow: 2px 2px 2px #aaaaaa; } /* sidebar*/ .skin-blue .main-sidebar {background: rgb(20,97,117);background: -moz-linear-gradient(top, rgb(20,97,117) 0%, rgb(56,161,187) 50%, rgb(3,22,56) 100%);background: -webkit-gradient(left top,left bottom, color-stop(0%, rgb(20,97,117)), color-stop(50%, rgb(56,161,187)), color-stop(100%, rgb(3,22,56)));background: -webkit-linear-gradient(top, rgb(20,97,117) 0%, rgb(56,161,187) 50%, rgb(3,22,56) 100%);background: -o-linear-gradient(top, rgb(20,97,117) 0%, rgb(56,161,187) 50%, rgb(3,22,56) 100%);background: -ms-linear-gradient(top, rgb(20,97,117) 0%, rgb(56,161,187) 50%, rgb(3,22,56) 100%);background: linear-gradient(to bottom, rgb(20,97,117) 0%, rgb(56,161,187) 50%, rgb(3,22,56) 100%);box-shadow: 3px 5px 5px #aaaaaa;padding-left: 0px;padding-right: 0px;/* padding-top: 60px; */ } /* sidebar menu */ .main-sidebar .user-panel, .sidebar-menu, .sidebar-menu>li.header {white-space: nowrap;background: transparent;padding: 0px;border-radius: 0px; } /* fix for user panel */ .user-panel>.info>p, .skin-blue .user-panel>.info {color: rgb(255,255,255);font-size: 12px;font-weight: normal; } section.sidebar .user-panel {padding: 10px; } /* sidebar: tabs */ .skin-blue .main-sidebar .sidebar .sidebar-menu a {color: rgb(255,255,255);font-size: 13px;border-style: none none solid none;border-color: rgb(35,106,135);border-width: 1px; } /* sidebar: tab selected */ .skin-blue .main-sidebar .sidebar .sidebar-menu .active > a {color: rgb(0,0,0);font-size: 13px;border-radius: 0px 20px 20px 0px;border-style: none none solid none;border-color: rgb(75,126,151);border-width: 1px; } .skin-blue .sidebar-menu > li:hover > a, .skin-blue .sidebar-menu > li.active > a {color: rgb(0,0,0);background: rgba(44,222,235,1);background: -moz-linear-gradient(left, rgba(44,222,235,1) 0%, rgba(44,222,235,1) 30%, rgba(0,255,213,1) 100%);background: -webkit-gradient(left top,right top, color-stop(0%, rgba(44,222,235,1)), color-stop(30%, rgba(44,222,235,1)), color-stop(100%, rgba(0,255,213,1)));background: -webkit-linear-gradient(left, rgba(44,222,235,1) 0%, rgba(44,222,235,1) 30%, rgba(0,255,213,1) 100%);background: -o-linear-gradient(left, rgba(44,222,235,1) 0%, rgba(44,222,235,1) 30%, rgba(0,255,213,1) 100%);background: -ms-linear-gradient(left, rgba(44,222,235,1) 0%, rgba(44,222,235,1) 30%, rgba(0,255,213,1) 100%);background: linear-gradient(to right, rgba(44,222,235,1) 0%, rgba(44,222,235,1) 30%, rgba(0,255,213,1) 100%);border-radius: 0px 20px 20px 0px; } /* sidebar: tab hovered */ .skin-blue .main-sidebar .sidebar .sidebar-menu a:hover {background: rgba(44,222,235,1);background: -moz-linear-gradient(left, rgba(44,222,235,1) 0%, rgba(44,222,235,1) 30%, rgba(0,255,213,1) 100%);background: -webkit-gradient(left top,right top, color-stop(0%, rgba(44,222,235,1)), color-stop(30%, rgba(44,222,235,1)), color-stop(100%, rgba(0,255,213,1)));background: -webkit-linear-gradient(left, rgba(44,222,235,1) 0%, rgba(44,222,235,1) 30%, rgba(0,255,213,1) 100%);background: -o-linear-gradient(left, rgba(44,222,235,1) 0%, rgba(44,222,235,1) 30%, rgba(0,255,213,1) 100%);background: -ms-linear-gradient(left, rgba(44,222,235,1) 0%, rgba(44,222,235,1) 30%, rgba(0,255,213,1) 100%);background: linear-gradient(to right, rgba(44,222,235,1) 0%, rgba(44,222,235,1) 30%, rgba(0,255,213,1) 100%);color: rgb(50,50,50);font-size: 13px;border-style: none none solid none;border-color: rgb(75,126,151);border-width: 1px;border-radius: 0px 20px 20px 0px; } /* sidebar: subtab */ .skin-blue .sidebar-menu > li > .treeview-menu {margin: 0px;background: transparent; } .skin-blue .treeview-menu > li > a {background: transparent; } /* sidebar: subtab selected */ .skin-blue .treeview-menu > li.active > a, .skin-blue .treeview-menu > li > a:hover {background: rgba(44,222,235,1);background: -moz-linear-gradient(left, rgba(44,222,235,1) 0%, rgba(44,222,235,1) 30%, rgba(0,255,213,1) 100%);background: -webkit-gradient(left top,right top, color-stop(0%, rgba(44,222,235,1)), color-stop(30%, rgba(44,222,235,1)), color-stop(100%, rgba(0,255,213,1)));background: -webkit-linear-gradient(left, rgba(44,222,235,1) 0%, rgba(44,222,235,1) 30%, rgba(0,255,213,1) 100%);background: -o-linear-gradient(left, rgba(44,222,235,1) 0%, rgba(44,222,235,1) 30%, rgba(0,255,213,1) 100%);background: -ms-linear-gradient(left, rgba(44,222,235,1) 0%, rgba(44,222,235,1) 30%, rgba(0,255,213,1) 100%);background: linear-gradient(to right, rgba(44,222,235,1) 0%, rgba(44,222,235,1) 30%, rgba(0,255,213,1) 100%); } /* sidebar: search text area */ .skin-blue .sidebar-form input[type=text] {background: rgb(55,72,80);color: rgb(0,0,0);border-radius: 5px 0px 0px 5px;border-color: rgb(55,72,80);border-style: solid none solid solid; } /* sidebar: search button */ .skin-blue .input-group-btn > .btn {background: rgb(55,72,80);color: rgb(153,153,153);border-radius: 0px 5px 5px 0px;border-style: solid solid solid none;border-color: rgb(55,72,80); } /* sidebar form */ .skin-blue .sidebar-form {border-radius: 0px;border: 0px none rgb(255,255,255);margin: 10px; } /* body */ .content-wrapper, .right-side {background: rgb(248,248,248); } /* box */ .box {background: rgb(255,255,255);border-radius: 5px;box-shadow: 0px 1px 1px rgba(0,0,0,.1); } /* box: title */ .box-header .box-title {font-size: 16px; } /* tabbox: title */ .nav-tabs-custom>.nav-tabs>li.header {color: rgb(0,0,0);font-size: 16px; } /* tabbox: tab color */ .nav-tabs-custom, .nav-tabs-custom .nav-tabs li.active:hover a, .nav-tabs-custom .nav-tabs li.active a {background: rgb(255,255,255);color: rgb(0,0,0);border-radius: 5px; } .nav-tabs-custom {box-shadow: 0px 1px 1px rgba(0,0,0,.1); } /* tabbox: active tab bg */ .nav-tabs-custom>.nav-tabs>li.active {border-radius: 5px;border-top-color: rgba(44,222,235,1);# box-shadow: 0px 1px 1px rgba(0,0,0,.1); } /* tabbox: font color */ .nav-tabs-custom>.nav-tabs>li.active:hover>a, .nav-tabs-custom>.nav-tabs>li.active>a {border-bottom-color: rgb(255,255,255);border-top-color: rgba(44,222,235,1);border-right-color: rgba(44,222,235,1);border-left-color: rgba(44,222,235,1);color: rgb(0,0,0);font-size: 14px;border-radius: 5px; } /* tabbox: inactive tabs background */ .nav-tabs-custom>.nav-tabs>li>a {color: rgb(0,0,0);font-size: 14px; } /* tabbox: top area back color */ .nav-tabs-custom, .nav-tabs-custom>.tab-content, .nav-tabs-custom>.nav-tabs {border-bottom-color: rgba(44,222,235,1);background: rgb(255,255,255); } /* tabbox: top area rounded corners */ .nav-tabs-custom>.nav-tabs {margin: 0;border-radius: 5px; } /* infobox */ .info-box {background: rgb(255,255,255);border-radius: 5px;box-shadow: 0px 1px 1px rgba(0,0,0,.1); } /* valuebox */ .small-box {border-radius: 5px;box-shadow: 0px 1px 1px rgba(0,0,0,.1); } /* valuebox: main font color */ .small-box h3, .small-box p {color: rgb(255,255,255) } /* box: default color */ .box.box-solid>.box-header, .box>.box-header {color: rgb(0,0,0); } .box.box-solid>.box-header {border-radius: 5px; } .box.box-solid, .box {border-radius: 5px;border-top-color: rgb(210,214,220); } /* box: info color */ .box.box-solid.box-info>.box-header h3, .box.box-info>.box-header h3 {color: rgb(0,0,0); } .box.box-solid.box-info>.box-header {background: rgb(210,214,220);border-radius: 5px; } .box.box-solid.box-info, .box.box-info {border-color: rgb(210,214,220);border-left-color: rgb(210,214,220);border-right-color: rgb(210,214,220);border-top-color: rgb(210,214,220);border-radius: 5px; } /* box: primary color */ .box.box-solid.box-primary>.box-header h3, .box.box-primary>.box-header h3 {color: rgb(0,0,0); } .box.box-solid.box-primary>.box-header {background: rgba(44,222,235,1);border-radius: 5px; } .box.box-solid.box-primary, .box.box-primary {border-color: rgba(44,222,235,1);border-left-color: rgba(44,222,235,1);border-right-color: rgba(44,222,235,1);border-top-color: rgba(44,222,235,1);border-radius: 5px; } /* box: success color */ .box.box-solid.box-success>.box-header h3, .box.box-success>.box-header h3 {color: rgb(0,0,0); } .box.box-solid.box-success>.box-header {background: rgba(0,255,213,1);border-radius: 5px; } .box.box-solid.box-success, .box.box-success {border-color: rgba(0,255,213,1);border-left-color: rgba(0,255,213,1);border-right-color: rgba(0,255,213,1);border-top-color: rgba(0,255,213,1);border-radius: 5px; } /* box: warning color */ .box.box-solid.box-warning>.box-header h3, .box.box-warning>.box-header h3 {color: rgb(0,0,0); } .box.box-solid.box-warning>.box-header {background: rgb(244,156,104);border-radius: 5px; } .box.box-solid.box-warning, .box.box-warning {border-color: rgb(244,156,104);border-left-color: rgb(244,156,104);border-right-color: rgb(244,156,104);border-top-color: rgb(244,156,104);border-radius: 5px; } /* box: danger color */ .box.box-solid.box-danger>.box-header h3, .box.box-danger>.box-header h3 {color: rgb(0,0,0); } .box.box-solid.box-danger>.box-header {background: rgb(255,88,55);border-radius: 5px; } .box.box-solid.box-danger, .box.box-danger {border-color: rgb(255,88,55);border-left-color: rgb(255,88,55);border-right-color: rgb(255,88,55);border-top-color: rgb(255,88,55);border-radius: 5px; } /* button */ .btn-default {background: rgb(245,245,245);color: rgb(0,0,0);border-color: rgb(200,200,200);border-radius: 5px;height: 34px;padding: 6px 12px; } /* button: hover */ .btn-default:hover {background: rgb(235,235,235);color: rgb(100,100,100);border-color: rgb(200,200,200); } /* button: focus */ .btn-default:focus, .action-button:focus {background: rgb(245,245,245);color: rgb(0,0,0);border-color: rgb(200,200,200); } /* button: active */ .btn-default:active, .action-button:active {background: rgb(245,245,245);color: rgb(0,0,0);border-color: rgb(200,200,200); } /* button: visited */ .btn-default:visited {background: rgb(245,245,245);color: rgb(0,0,0);border-color: rgb(200,200,200); } /* textbox */ .form-control, .selectize-input, .selectize-control.single .selectize-input {background: rgb(255,255,255);color: rgb(0,0,0);border-color: rgb(200,200,200);border-radius: 5px;height: 34px;min-height: 34px;padding: 6px 12px; } /* textbox: selected */ .form-control:focus, .selectize-input.focus {color: rgb(0,0,0);background: rgb(245,245,245);border-color: rgb(200,200,200);-webkit-box-shadow: inset 0px 0px 0px, 0px 0px 0px;box-shadow: inset 0px 0px 0px, 0px 0px 0px; } /* multi-row selectize input */ .selectize-control.multi .selectize-input.has-items {height: auto; } /* verbatim text output */ .qt pre, .qt code {font-family: Arial !important; } pre {color: rgb(0,0,0);background-color: rgb(255,255,255);border: 1px solid rgb(200,200,200);border-radius: 5px; } /* drop-down menu */ .selectize-dropdown, .selectize-dropdown.form-control {background: rgb(255,255,255);border-radius: 4px; } /* table */ .table {background: rgb(255,255,255);border-radius: 5px; } /* table: row border color*/ .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {border-top: 1px solid rgb(240,240,240); } /* table: top border color*/ .table>thead>tr>th {border-bottom: 1px solid rgb(240,240,240); } /* table: hover row */ .table-hover>tbody>tr:hover { background-color: rgb(240,240,240); } /* table: stripe row */ .table-striped>tbody>tr:nth-of-type(odd) {background-color: rgb(240,240,240); } /* table: body colour */ table.dataTable tbody tr {background-color: rgb(255,255,255) !important; } /* table: text and footer border colour */ table.dataTable {color: rgb(0,0,0) !important;border: 0px !important; } /* datatable: selected row */ table.dataTable tr.selected td, table.dataTable td.selected {background-color: rgba(0,255,213,1) !important;color: rgb(0,0,0) !important; } /* datatable: hover row */ table.dataTable tr.hover td, table.dataTable td.hover {background-color: rgb(240,240,240) !important; } table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {background-color: rgb(240,240,240) !important; } table.dataTable.row-border tbody th, table.dataTable.row-border tbody td, table.dataTable.display tbody th, table.dataTable.display tbody td {border-top: 1px solid rgb(240,240,240) !important; } /* datatable: stripe row */ table.dataTable.stripe tbody tr.odd, table.dataTable.display tbody tr.odd {background-color: rgb(240,240,240) !important; } /* datatable: page control */ .dataTables_wrapper .dataTables_paginate .paginate_button {color: rgb(0,0,0) !important; } /* datatable: table info */ .dataTables_wrapper .dataTables_paginate .paginate_button.disabled, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active {color: rgb(0,0,0) !important; } .dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_filter, .dataTables_wrapper .dataTables_info, .dataTables_wrapper .dataTables_processing, .dataTables_wrapper .dataTables_paginate {color: rgb(0,0,0) !important; } .dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_filter, .dataTables_wrapper .dataTables_info, .dataTables_wrapper .dataTables_processing, .dataTables_wrapper .dataTables_paginate {color: rgb(0,0,0) !important; } /* datatable search box */ .dataTables_wrapper .dataTables_filter input {background-color: rgb(255,255,255);border: 1px solid rgb(200,200,200);border-radius: 5px; } /* notification and progress bar */ .progress-bar {background-color: rgba(0,255,213,1); } .shiny-notification {height: 80px;font-family: Arial;font-size: 15px;border-radius: 10px;margin-left: -450px !important; } /* horizontal divider line */ hr {border-top: 1px solid rgb(215,215,215); } /* modal */ .modal-body {background-color: rgb(255,255,255); } .modal-footer {background-color: rgb(255,255,255); } .modal-header {background-color: rgb(255,255,255); } </style>
-<script src="__assets__/sockjs-0.3.min.js"></script>
-<script src="__assets__/shiny-server-client.min.js"></script>
-<script>preShinyInit({reconnect:true,reconnectTimeout:15000,disableProtocols:["xdr-streaming","xdr-polling","websocket"],transportDebugging:false,token:true,workerId:true,subappTag:true,extendSession:true,fixupInternalLinks:true});</script>
-<link rel="stylesheet" type="text/css" href="__assets__/rstudio-connect.css">
-<link rel="stylesheet" type="text/css" href="/__static__/frontend/css/shinyapps.css"></head>
-<body class="skin-blue" style="min-height: 611px; height: auto;">
-<script type="text/javascript" src="/__static__/components/iframe-resizer/js/iframeResizer.contentWindow.min.js"></script>
-<script type="text/javascript" src="/__static__/frontend/scripts/shinyapps.frame.content.js"></script>
-<script type="text/javascript" src="/__static__/frontend/scripts/shinyapps.js"></script>
-
-  <div class="wrapper" style="height: auto;">
+</head>
+<body class="skin-blue" style="min-height: 611px;">
+  <div class="wrapper">
     <header class="main-header">
       <span class="logo"><p style="font-size:16px"><b> FitPal: </b>Fitness Tracker<span> &nbsp; </span><span style="background-color: rgb(255,255,255);border-radius: 3px; "> &nbsp;<font color="#31386b" size="2">v1.1</font> &nbsp; </span> </p></span>
       <nav class="navbar navbar-static-top" role="navigation">
@@ -117,8 +95,8 @@
         </div>
       </nav>
     </header>
-    <aside id="sidebarCollapsed" class="main-sidebar shiny-bound-input" data-collapsed="true">
-      <section id="sidebarItemExpanded" class="sidebar shiny-bound-input">
+    <aside id="sidebarCollapsed" class="main-sidebar" data-collapsed="false">
+      <section id="sidebarItemExpanded" class="sidebar">
         <div class="user-panel">
           <div class="pull-left info" style="left: 4px">
             <p>User Name</p>
@@ -129,8 +107,8 @@
           </div>
         </div>
         <ul class="sidebar-menu">
-          <li class="active">
-            <a href="#shiny-tab-user_profile" data-toggle="tab" data-value="user_profile" aria-expanded="true" tabindex="0" aria-selected="true">
+          <li>
+            <a href="#shiny-tab-user_profile" data-toggle="tab" data-value="user_profile">
               <i class="fa fa-id-card" role="presentation" aria-label="id-card icon"></i>
               <span>Update User Profile</span>
             </a>
@@ -168,14 +146,14 @@
               </li>
             </ul>
           </li>
-          <div id="tabs" class="sidebarMenuSelectedTabItem shiny-bound-input" data-value="user_profile"></div>
+          <div id="tabs" class="sidebarMenuSelectedTabItem" data-value="null"></div>
         </ul>
       </section>
     </aside>
-    <div class="content-wrapper" style="min-height: 721px;">
+    <div class="content-wrapper">
       <section class="content">
         <div class="tab-content">
-          <div role="tabpanel" class="tab-pane active" id="shiny-tab-user_profile" aria-hidden="false" tabindex="0">
+          <div role="tabpanel" class="tab-pane" id="shiny-tab-user_profile">
             <h3>
               User Profile
               <i class="fa fa-id-card" role="presentation" aria-label="id-card icon"></i>
@@ -186,7 +164,7 @@
                   <div class="box-body">
                     <div class="form-group shiny-input-container">
                       <label class="control-label" id="name-label" for="name">Name</label>
-                      <input id="name" type="text" class="form-control shiny-bound-input" value="" placeholder="Enter Your Name">
+                      <input id="name" type="text" class="form-control" value="" placeholder="Enter Your Name"/>
                     </div>
                   </div>
                 </div>
@@ -195,9 +173,13 @@
                 <div class="box">
                   <div class="box-body">
                     <div class="form-group shiny-input-container">
-                      <label class="control-label" id="gender-label" for="gender-selectized">Select Your Gender</label>
+                      <label class="control-label" id="gender-label" for="gender">Select Your Gender</label>
                       <div>
-                        <select id="gender" tabindex="-1" class="selectized shiny-bound-input" style="display: none;"><option value="Male" selected="selected">Male</option></select><div class="selectize-control single plugin-selectize-plugin-a11y"><div class="selectize-input items full has-options has-items"><div class="item" data-value="Male">Male</div><input type="text" autocomplete="off" tabindex="" id="gender-selectized" role="combobox" aria-expanded="false" haspopup="listbox" aria-owns="pmqo1ib6w0" style="width: 4px;"></div><div class="selectize-dropdown single plugin-selectize-plugin-a11y" style="display: none;"><div class="selectize-dropdown-content" role="listbox" id="pmqo1ib6w0"></div></div></div>
+                        <select id="gender"><option value="Male" selected>Male</option>
+<option value="Female">Female</option>
+<option value="Transgender">Transgender</option>
+<option value="Non-binary">Non-binary</option>
+<option value="Prefer Not To Respond">Prefer Not To Respond</option></select>
                         <script type="application/json" data-for="gender" data-nonempty="">{"plugins":["selectize-plugin-a11y"]}</script>
                       </div>
                     </div>
@@ -211,7 +193,7 @@
                   <div class="box-body">
                     <div class="form-group shiny-input-container">
                       <label class="control-label" id="height-label" for="height">Enter Your Height (in)</label>
-                      <input id="height" type="number" class="form-control shiny-bound-input" value="60" min="20" max="110" step="1">
+                      <input id="height" type="number" class="form-control" value="60" min="20" max="110" step="1"/>
                     </div>
                   </div>
                 </div>
@@ -221,7 +203,7 @@
                   <div class="box-body">
                     <div class="form-group shiny-input-container">
                       <label class="control-label" id="weight-label" for="weight">Enter Your Weight (lb)</label>
-                      <input id="weight" type="number" class="form-control shiny-bound-input" value="170" min="5" max="700" step="1">
+                      <input id="weight" type="number" class="form-control" value="170" min="5" max="700" step="1"/>
                     </div>
                   </div>
                 </div>
@@ -241,16 +223,16 @@
                         <label class="input-group-btn input-group-prepend">
                           <span class="btn btn-default btn-file">
                             Browse...
-                            <input id="user_data" name="user_data" type="file" style="position: absolute !important; top: -99999px !important; left: -99999px !important;" accept=".xlsx" class="shiny-bound-input">
+                            <input id="user_data" name="user_data" type="file" style="position: absolute !important; top: -99999px !important; left: -99999px !important;" accept=".xlsx"/>
                           </span>
                         </label>
-                        <input type="text" class="form-control" placeholder="No file selected" readonly="readonly">
+                        <input type="text" class="form-control" placeholder="No file selected" readonly="readonly"/>
                       </div>
                       <div id="user_data_progress" class="progress active shiny-file-input-progress">
                         <div class="progress-bar"></div>
                       </div>
                     </div>
-                    <button class="btn btn-default action-button btn-primary shiny-bound-input" id="action" type="button">Confirm File Upload or Use Sample Data</button>
+                    <button class="btn btn-default action-button btn-primary" id="action" type="button">Confirm File Upload or Use Sample Data</button>
                   </div>
                 </div>
               </div>
@@ -258,13 +240,19 @@
                 <div class="box">
                   <div class="box-body">
                     <div class="form-group shiny-input-container">
-                      <label class="control-label" id="sample_data-label" for="sample_data-selectized">Choose a sample sheet</label>
+                      <label class="control-label" id="sample_data-label" for="sample_data">Choose a sample sheet</label>
                       <div>
-                        <select id="sample_data" tabindex="-1" class="selectized shiny-bound-input" style="display: none;"><option value="Hourly Steps" selected="selected">Hourly Steps</option></select><div class="selectize-control single plugin-selectize-plugin-a11y"><div class="selectize-input items full has-options has-items"><div class="item" data-value="Hourly Steps">Hourly Steps</div><input type="text" autocomplete="off" tabindex="" id="sample_data-selectized" role="combobox" aria-expanded="false" haspopup="listbox" aria-owns="dfxesui32d" style="width: 4px;"></div><div class="selectize-dropdown single plugin-selectize-plugin-a11y" style="display: none;"><div class="selectize-dropdown-content" role="listbox" id="dfxesui32d"></div></div></div>
+                        <select id="sample_data"><option value="Hourly Steps" selected>Hourly Steps</option>
+<option value="Hourly Calories">Hourly Calories</option>
+<option value="Hourly Intensities">Hourly Intensities</option>
+<option value="Daily Intensities">Daily Intensities</option>
+<option value="Daily Activity">Daily Activity</option>
+<option value="Sleep Minutes">Sleep Minutes</option>
+<option value="Daily Sleep">Daily Sleep</option></select>
                         <script type="application/json" data-for="sample_data" data-nonempty="">{"plugins":["selectize-plugin-a11y"]}</script>
                       </div>
                     </div>
-                    <a id="download_sample" class="btn btn-default shiny-download-link shiny-bound-output" href="session/cb72541630635ea29fe9e9c951d3e06e/download/download_sample?w=ec62ec8f" target="_blank" download="" aria-live="polite">
+                    <a id="download_sample" class="btn btn-default shiny-download-link " href="" target="_blank" download>
                       <i class="fa fa-download" role="presentation" aria-label="download icon"></i>
                       Download Sample Data
                     </a>
@@ -274,19 +262,7 @@
               <div class="col-sm-12">
                 <div class="box">
                   <div class="box-body">
-                    <div id="sample_table" class="shiny-html-output shiny-bound-output" aria-live="polite"><table class="table shiny-table table- spacing-s" style="width:auto;">
-<thead> <tr> <th style="text-align: right;"> Id </th> <th style="text-align: left;"> ActivityHour </th> <th style="text-align: right;"> StepTotal </th>  </tr> </thead> <tbody>
-  <tr> <td align="right"> 6962181067.00 </td> <td> 1460419200.00 </td> <td align="right"> 32.00 </td> </tr>
-  <tr> <td align="right"> 6962181067.00 </td> <td> 1460422800.00 </td> <td align="right"> 0.00 </td> </tr>
-  <tr> <td align="right"> 6962181067.00 </td> <td> 1460426400.00 </td> <td align="right"> 0.00 </td> </tr>
-  <tr> <td align="right"> 6962181067.00 </td> <td> 1460430000.00 </td> <td align="right"> 0.00 </td> </tr>
-  <tr> <td align="right"> 6962181067.00 </td> <td> 1460433600.00 </td> <td align="right"> 0.00 </td> </tr>
-  <tr> <td align="right"> 6962181067.00 </td> <td> 1460437200.00 </td> <td align="right"> 0.00 </td> </tr>
-  <tr> <td align="right"> 6962181067.00 </td> <td> 1460440800.00 </td> <td align="right"> 21.00 </td> </tr>
-  <tr> <td align="right"> 6962181067.00 </td> <td> 1460444400.00 </td> <td align="right"> 412.00 </td> </tr>
-  <tr> <td align="right"> 6962181067.00 </td> <td> 1460448000.00 </td> <td align="right"> 156.00 </td> </tr>
-  <tr> <td align="right"> 6962181067.00 </td> <td> 1460451600.00 </td> <td align="right"> 2812.00 </td> </tr>
-   </tbody> </table></div>
+                    <div id="sample_table" class="shiny-html-output"></div>
                   </div>
                 </div>
               </div>
@@ -301,7 +277,7 @@
               <div class="col-sm-12">
                 <div class="box">
                   <div class="box-body">
-                    <div id="bmiplot" class="shiny-plot-output shiny-bound-output" style="width:100%;height:400px;" aria-live="polite"></div>
+                    <div id="bmiplot" class="shiny-plot-output" style="width:100%;height:400px;"></div>
                   </div>
                 </div>
               </div>
@@ -316,8 +292,8 @@
                   <div class="box-body">
                     <div class="form-group shiny-input-container">
                       <label for="steps_goal">Daily Steps</label>
-                      <br>
-                      <div style="display:inline;width:200px;height:200px;"><canvas width="400" height="400" style="width: 200px; height: 200px;"></canvas><input id="steps_goal" type="text" class="knob-input shiny-bound-input" data-value="9000" data-min="0" data-max="1e+05" data-step="1" data-angleoffset="0" data-anglearc="360" data-displayprevious="true" data-displayinput="true" data-linecap="round" data-fgcolor="#428BCA" data-inputcolor="#428BCA" data-cursor="false" data-rotation="clockwise" data-readonly="false" data-immediate="true" style="width: 104px; height: 66px; position: absolute; vertical-align: middle; margin-top: 66px; margin-left: -152px; border: 0px; background: none; font: bold 25px Arial; text-align: center; color: rgb(66, 139, 202); padding: 0px; appearance: none;"></div>
+                      <br/>
+                      <input id="steps_goal" type="text" class="knob-input" data-value="9000" data-min="0" data-max="1e+05" data-step="1" data-angleoffset="0" data-anglearc="360" data-displayprevious="true" data-displayinput="true" data-linecap="round" data-fgcolor="#428BCA" data-inputcolor="#428BCA" data-cursor="false" data-rotation="clockwise" data-readonly="false" data-immediate="true"/>
                     </div>
                   </div>
                 </div>
@@ -327,8 +303,8 @@
                   <div class="box-body">
                     <div class="form-group shiny-input-container">
                       <label for="stand_goal">Daily Standing Hours</label>
-                      <br>
-                      <div style="display:inline;width:200px;height:200px;"><canvas width="400" height="400" style="width: 200px; height: 200px;"></canvas><input id="stand_goal" type="text" class="knob-input shiny-bound-input" data-value="6" data-min="0" data-max="24" data-step="1" data-angleoffset="0" data-anglearc="360" data-displayprevious="true" data-displayinput="true" data-linecap="round" data-fgcolor="#428BCA" data-inputcolor="#428BCA" data-cursor="false" data-rotation="clockwise" data-readonly="false" data-immediate="true" style="width: 104px; height: 66px; position: absolute; vertical-align: middle; margin-top: 66px; margin-left: -152px; border: 0px; background: none; font: bold 50px Arial; text-align: center; color: rgb(66, 139, 202); padding: 0px; appearance: none;"></div>
+                      <br/>
+                      <input id="stand_goal" type="text" class="knob-input" data-value="6" data-min="0" data-max="24" data-step="1" data-angleoffset="0" data-anglearc="360" data-displayprevious="true" data-displayinput="true" data-linecap="round" data-fgcolor="#428BCA" data-inputcolor="#428BCA" data-cursor="false" data-rotation="clockwise" data-readonly="false" data-immediate="true"/>
                     </div>
                   </div>
                 </div>
@@ -338,8 +314,8 @@
                   <div class="box-body">
                     <div class="form-group shiny-input-container">
                       <label for="exercise_goal (calories)">Daily Calories Burnt</label>
-                      <br>
-                      <div style="display:inline;width:200px;height:200px;"><canvas width="400" height="400" style="width: 200px; height: 200px;"></canvas><input id="exercise_goal (calories)" type="text" class="knob-input shiny-bound-input" data-value="1800" data-min="0" data-max="4000" data-step="1" data-angleoffset="0" data-anglearc="360" data-displayprevious="true" data-displayinput="true" data-linecap="round" data-fgcolor="#428BCA" data-inputcolor="#428BCA" data-cursor="false" data-rotation="clockwise" data-readonly="false" data-immediate="true" style="width: 104px; height: 66px; position: absolute; vertical-align: middle; margin-top: 66px; margin-left: -152px; border: 0px; background: none; font: bold 33px Arial; text-align: center; color: rgb(66, 139, 202); padding: 0px; appearance: none;"></div>
+                      <br/>
+                      <input id="exercise_goal (calories)" type="text" class="knob-input" data-value="1800" data-min="0" data-max="4000" data-step="1" data-angleoffset="0" data-anglearc="360" data-displayprevious="true" data-displayinput="true" data-linecap="round" data-fgcolor="#428BCA" data-inputcolor="#428BCA" data-cursor="false" data-rotation="clockwise" data-readonly="false" data-immediate="true"/>
                     </div>
                   </div>
                 </div>
@@ -349,14 +325,14 @@
                   <div class="box-body">
                     <div class="form-group shiny-input-container">
                       <label for="sleep_goal (hours)">Daily Sleep Hours</label>
-                      <br>
-                      <div style="display:inline;width:200px;height:200px;"><canvas width="400" height="400" style="width: 200px; height: 200px;"></canvas><input id="sleep_goal (hours)" type="text" class="knob-input shiny-bound-input" data-value="8" data-min="0" data-max="24" data-step="1" data-angleoffset="0" data-anglearc="360" data-displayprevious="true" data-displayinput="true" data-linecap="round" data-fgcolor="#428BCA" data-inputcolor="#428BCA" data-cursor="false" data-rotation="clockwise" data-readonly="false" data-immediate="true" style="width: 104px; height: 66px; position: absolute; vertical-align: middle; margin-top: 66px; margin-left: -152px; border: 0px; background: none; font: bold 50px Arial; text-align: center; color: rgb(66, 139, 202); padding: 0px; appearance: none;"></div>
+                      <br/>
+                      <input id="sleep_goal (hours)" type="text" class="knob-input" data-value="8" data-min="0" data-max="24" data-step="1" data-angleoffset="0" data-anglearc="360" data-displayprevious="true" data-displayinput="true" data-linecap="round" data-fgcolor="#428BCA" data-inputcolor="#428BCA" data-cursor="false" data-rotation="clockwise" data-readonly="false" data-immediate="true"/>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <button class="btn btn-default action-button btn-primary shiny-bound-input" id="set_goal" type="button">Update Goals</button>
+            <button class="btn btn-default action-button btn-primary" id="set_goal" type="button">Update Goals</button>
             <h3>
               Start Your Weight Loss Journey
               <i class="fa fa-weight" role="presentation" aria-label="weight icon"></i>
@@ -367,26 +343,26 @@
                   <div class="box-body">
                     <div class="form-group shiny-input-container">
                       <label for="weight_goal">Set Desired Weight (lb)</label>
-                      <br>
-                      <div style="display:inline;width:200px;height:200px;"><canvas width="400" height="400" style="width: 200px; height: 200px;"></canvas><input id="weight_goal" type="text" class="knob-input shiny-bound-input" data-value="127" data-min="60" data-max="204" data-step="1" data-angleoffset="0" data-anglearc="360" data-displayprevious="true" data-displayinput="true" data-linecap="round" data-fgcolor="#428BCA" data-inputcolor="#428BCA" data-cursor="false" data-rotation="clockwise" data-readonly="false" data-immediate="true" style="width: 104px; height: 66px; position: absolute; vertical-align: middle; margin-top: 66px; margin-left: -152px; border: 0px; background: none; font: bold 40px Arial; text-align: center; color: rgb(66, 139, 202); padding: 0px; appearance: none;"></div>
+                      <br/>
+                      <input id="weight_goal" type="text" class="knob-input" data-value="127" data-min="60" data-max="204" data-step="1" data-angleoffset="0" data-anglearc="360" data-displayprevious="true" data-displayinput="true" data-linecap="round" data-fgcolor="#428BCA" data-inputcolor="#428BCA" data-cursor="false" data-rotation="clockwise" data-readonly="false" data-immediate="true"/>
                     </div>
                     <div class="form-group shiny-input-container">
                       <div class="checkbox">
                         <label>
-                          <input id="bmi" type="checkbox" class="shiny-bound-input">
+                          <input id="bmi" type="checkbox"/>
                           <span>Check this if you want us to set your goal based on your BMI index</span>
                         </label>
                       </div>
                     </div>
-                    <div id="date4" class="shiny-date-input form-group shiny-input-container shiny-bound-input">
+                    <div id="date4" class="shiny-date-input form-group shiny-input-container">
                       <label class="control-label" id="date4-label" for="date4">Set a target date to achieve this goal</label>
-                      <input type="text" class="form-control" aria-labelledby="date4-label" title="Date format: yyyy-mm-dd" data-date-language="en" data-date-week-start="0" data-date-format="yyyy-mm-dd" data-date-start-view="month" data-initial-date="2021-08-01" data-date-autoclose="true" data-date-dates-disabled="null" data-date-days-of-week-disabled="null">
+                      <input type="text" class="form-control" aria-labelledby="date4-label" title="Date format: yyyy-mm-dd" data-date-language="en" data-date-week-start="0" data-date-format="yyyy-mm-dd" data-date-start-view="month" data-initial-date="2021-08-01" data-date-autoclose="true" data-date-dates-disabled="null" data-date-days-of-week-disabled="null"/>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <button class="btn btn-default action-button btn-primary shiny-bound-input" id="set_weight_goal" type="button">Update Weight Goal</button>
+            <button class="btn btn-default action-button btn-primary" id="set_weight_goal" type="button">Update Weight Goal</button>
           </div>
           <div role="tabpanel" class="tab-pane" id="shiny-tab-dashboard">
             <h3>
@@ -396,150 +372,150 @@
             <div class="row">
               <div class="col-sm-6">
                 <div class="nav-tabs-custom" style="height: auto">
-                  <ul class="nav nav-tabs shiny-tab-input shiny-bound-input" id="steps" data-tabsetid="1679" role="tablist">
-                    <li class="active" role="presentation">
-                      <a href="#tab-1679-1" data-toggle="tab" data-value="Hourly" role="tab" id="ui-tab-513" tabindex="0" aria-selected="true" aria-controls="tab-1679-1">Hourly</a>
+                  <ul class="nav nav-tabs shiny-tab-input" id="steps" data-tabsetid="2977">
+                    <li class="active">
+                      <a href="#tab-2977-1" data-toggle="tab" data-value="Hourly">Hourly</a>
                     </li>
-                    <li role="presentation">
-                      <a href="#tab-1679-2" data-toggle="tab" data-value="Daily" role="tab" id="ui-tab-771" tabindex="-1" aria-selected="false" aria-controls="tab-1679-2">Daily</a>
+                    <li>
+                      <a href="#tab-2977-2" data-toggle="tab" data-value="Daily">Daily</a>
                     </li>
-                    <li role="presentation">
-                      <a href="#tab-1679-3" data-toggle="tab" data-value="Historic" role="tab" id="ui-tab-45" tabindex="-1" aria-selected="false" aria-controls="tab-1679-3">Historic</a>
+                    <li>
+                      <a href="#tab-2977-3" data-toggle="tab" data-value="Historic">Historic</a>
                     </li>
-                    <li class="header pull-right" role="presentation">
+                    <li class="header pull-right">
                       <i class="fa fa-walking" role="presentation" aria-label="walking icon"></i>
                       Steps
                     </li>
                   </ul>
-                  <div class="tab-content" data-tabsetid="1679">
-                    <div class="tab-pane active" data-value="Hourly" id="tab-1679-1" role="tabpanel" tabindex="0" aria-hidden="false" aria-labelledby="ui-tab-513">
-                      <div id="hourlysteps" class="shiny-plot-output shiny-bound-output" style="width:100%;height:400px;" aria-live="polite"></div>
+                  <div class="tab-content" data-tabsetid="2977">
+                    <div class="tab-pane active" data-value="Hourly" id="tab-2977-1">
+                      <div id="hourlysteps" class="shiny-plot-output" style="width:100%;height:400px;"></div>
                     </div>
-                    <div class="tab-pane" data-value="Daily" id="tab-1679-2" role="tabpanel" tabindex="-1" aria-hidden="true" aria-labelledby="ui-tab-771">
-                      <div id="dailysteps" class="shiny-plot-output shiny-bound-output" style="width:100%;height:400px;" aria-live="polite"></div>
+                    <div class="tab-pane" data-value="Daily" id="tab-2977-2">
+                      <div id="dailysteps" class="shiny-plot-output" style="width:100%;height:400px;"></div>
                     </div>
-                    <div class="tab-pane" data-value="Historic" id="tab-1679-3" role="tabpanel" tabindex="-1" aria-hidden="true" aria-labelledby="ui-tab-45">
-                      <div id="historicsteps" class="shiny-plot-output shiny-bound-output" style="width:100%;height:400px;" aria-live="polite"></div>
+                    <div class="tab-pane" data-value="Historic" id="tab-2977-3">
+                      <div id="historicsteps" class="shiny-plot-output" style="width:100%;height:400px;"></div>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="nav-tabs-custom" style="height: auto">
-                  <ul class="nav nav-tabs shiny-tab-input shiny-bound-input" id="cals" data-tabsetid="2655" role="tablist">
-                    <li class="active" role="presentation">
-                      <a href="#tab-2655-1" data-toggle="tab" data-value="Hourly" role="tab" id="ui-tab-918" tabindex="0" aria-selected="true" aria-controls="tab-2655-1">Hourly</a>
+                  <ul class="nav nav-tabs shiny-tab-input" id="cals" data-tabsetid="5056">
+                    <li class="active">
+                      <a href="#tab-5056-1" data-toggle="tab" data-value="Hourly">Hourly</a>
                     </li>
-                    <li role="presentation">
-                      <a href="#tab-2655-2" data-toggle="tab" data-value="Weekly" role="tab" id="ui-tab-847" tabindex="-1" aria-selected="false" aria-controls="tab-2655-2">Weekly</a>
+                    <li>
+                      <a href="#tab-5056-2" data-toggle="tab" data-value="Weekly">Weekly</a>
                     </li>
-                    <li role="presentation">
-                      <a href="#tab-2655-3" data-toggle="tab" data-value="Historic" role="tab" id="ui-tab-92" tabindex="-1" aria-selected="false" aria-controls="tab-2655-3">Historic</a>
+                    <li>
+                      <a href="#tab-5056-3" data-toggle="tab" data-value="Historic">Historic</a>
                     </li>
-                    <li class="header pull-right" role="presentation">
+                    <li class="header pull-right">
                       <i class="fa fa-running" role="presentation" aria-label="running icon"></i>
                       Calories
                     </li>
                   </ul>
-                  <div class="tab-content" data-tabsetid="2655">
-                    <div class="tab-pane active" data-value="Hourly" id="tab-2655-1" role="tabpanel" tabindex="0" aria-hidden="false" aria-labelledby="ui-tab-918">
-                      <div id="hourlycalories" class="shiny-plot-output shiny-bound-output" style="width:100%;height:400px;" aria-live="polite"></div>
+                  <div class="tab-content" data-tabsetid="5056">
+                    <div class="tab-pane active" data-value="Hourly" id="tab-5056-1">
+                      <div id="hourlycalories" class="shiny-plot-output" style="width:100%;height:400px;"></div>
                     </div>
-                    <div class="tab-pane" data-value="Weekly" id="tab-2655-2" role="tabpanel" tabindex="-1" aria-hidden="true" aria-labelledby="ui-tab-847">
-                      <div id="weeklycalories" class="shiny-plot-output shiny-bound-output" style="width:100%;height:400px;" aria-live="polite"></div>
+                    <div class="tab-pane" data-value="Weekly" id="tab-5056-2">
+                      <div id="weeklycalories" class="shiny-plot-output" style="width:100%;height:400px;"></div>
                     </div>
-                    <div class="tab-pane" data-value="Historic" id="tab-2655-3" role="tabpanel" tabindex="-1" aria-hidden="true" aria-labelledby="ui-tab-92">
-                      <div id="historiccalories" class="shiny-plot-output shiny-bound-output" style="width:100%;height:400px;" aria-live="polite"></div>
+                    <div class="tab-pane" data-value="Historic" id="tab-5056-3">
+                      <div id="historiccalories" class="shiny-plot-output" style="width:100%;height:400px;"></div>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="nav-tabs-custom" style="height: auto">
-                  <ul class="nav nav-tabs shiny-tab-input shiny-bound-input" id="intensity" data-tabsetid="6813" role="tablist">
-                    <li class="active" role="presentation">
-                      <a href="#tab-6813-1" data-toggle="tab" data-value="Daily" role="tab" id="ui-tab-311" tabindex="0" aria-selected="true" aria-controls="tab-6813-1">Daily</a>
+                  <ul class="nav nav-tabs shiny-tab-input" id="intensity" data-tabsetid="6485">
+                    <li class="active">
+                      <a href="#tab-6485-1" data-toggle="tab" data-value="Daily">Daily</a>
                     </li>
-                    <li role="presentation">
-                      <a href="#tab-6813-2" data-toggle="tab" data-value="Weekly" role="tab" id="ui-tab-510" tabindex="-1" aria-selected="false" aria-controls="tab-6813-2">Weekly</a>
+                    <li>
+                      <a href="#tab-6485-2" data-toggle="tab" data-value="Weekly">Weekly</a>
                     </li>
-                    <li role="presentation">
-                      <a href="#tab-6813-3" data-toggle="tab" data-value="Historic" role="tab" id="ui-tab-259" tabindex="-1" aria-selected="false" aria-controls="tab-6813-3">Historic</a>
+                    <li>
+                      <a href="#tab-6485-3" data-toggle="tab" data-value="Historic">Historic</a>
                     </li>
-                    <li class="header pull-right" role="presentation">
+                    <li class="header pull-right">
                       <i class="fa fa-dumbbell" role="presentation" aria-label="dumbbell icon"></i>
                       Intensity
                     </li>
                   </ul>
-                  <div class="tab-content" data-tabsetid="6813">
-                    <div class="tab-pane active" data-value="Daily" id="tab-6813-1" role="tabpanel" tabindex="0" aria-hidden="false" aria-labelledby="ui-tab-311">
-                      <div id="dailyintensity" class="shiny-plot-output shiny-bound-output" style="width:100%;height:400px;" aria-live="polite"></div>
+                  <div class="tab-content" data-tabsetid="6485">
+                    <div class="tab-pane active" data-value="Daily" id="tab-6485-1">
+                      <div id="dailyintensity" class="shiny-plot-output" style="width:100%;height:400px;"></div>
                     </div>
-                    <div class="tab-pane" data-value="Weekly" id="tab-6813-2" role="tabpanel" tabindex="-1" aria-hidden="true" aria-labelledby="ui-tab-510">
-                      <div id="weeklyintensity" class="shiny-plot-output shiny-bound-output" style="width:100%;height:400px;" aria-live="polite"></div>
+                    <div class="tab-pane" data-value="Weekly" id="tab-6485-2">
+                      <div id="weeklyintensity" class="shiny-plot-output" style="width:100%;height:400px;"></div>
                     </div>
-                    <div class="tab-pane" data-value="Historic" id="tab-6813-3" role="tabpanel" tabindex="-1" aria-hidden="true" aria-labelledby="ui-tab-259">
-                      <div id="historicintensity" class="shiny-plot-output shiny-bound-output" style="width:100%;height:400px;" aria-live="polite"></div>
+                    <div class="tab-pane" data-value="Historic" id="tab-6485-3">
+                      <div id="historicintensity" class="shiny-plot-output" style="width:100%;height:400px;"></div>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="nav-tabs-custom" style="height: auto">
-                  <ul class="nav nav-tabs shiny-tab-input shiny-bound-input" id="distance" data-tabsetid="4295" role="tablist">
-                    <li class="active" role="presentation">
-                      <a href="#tab-4295-1" data-toggle="tab" data-value="Daily" role="tab" id="ui-tab-200" tabindex="0" aria-selected="true" aria-controls="tab-4295-1">Daily</a>
+                  <ul class="nav nav-tabs shiny-tab-input" id="distance" data-tabsetid="6373">
+                    <li class="active">
+                      <a href="#tab-6373-1" data-toggle="tab" data-value="Daily">Daily</a>
                     </li>
-                    <li role="presentation">
-                      <a href="#tab-4295-2" data-toggle="tab" data-value="Weekly" role="tab" id="ui-tab-537" tabindex="-1" aria-selected="false" aria-controls="tab-4295-2">Weekly</a>
+                    <li>
+                      <a href="#tab-6373-2" data-toggle="tab" data-value="Weekly">Weekly</a>
                     </li>
-                    <li role="presentation">
-                      <a href="#tab-4295-3" data-toggle="tab" data-value="Historic" role="tab" id="ui-tab-542" tabindex="-1" aria-selected="false" aria-controls="tab-4295-3">Historic</a>
+                    <li>
+                      <a href="#tab-6373-3" data-toggle="tab" data-value="Historic">Historic</a>
                     </li>
-                    <li class="header pull-right" role="presentation">
+                    <li class="header pull-right">
                       <i class="fa fa-road" role="presentation" aria-label="road icon"></i>
                       Distance
                     </li>
                   </ul>
-                  <div class="tab-content" data-tabsetid="4295">
-                    <div class="tab-pane active" data-value="Daily" id="tab-4295-1" role="tabpanel" tabindex="0" aria-hidden="false" aria-labelledby="ui-tab-200">
-                      <div id="dailydist" class="shiny-plot-output shiny-bound-output" style="width:100%;height:400px;" aria-live="polite"></div>
+                  <div class="tab-content" data-tabsetid="6373">
+                    <div class="tab-pane active" data-value="Daily" id="tab-6373-1">
+                      <div id="dailydist" class="shiny-plot-output" style="width:100%;height:400px;"></div>
                     </div>
-                    <div class="tab-pane" data-value="Weekly" id="tab-4295-2" role="tabpanel" tabindex="-1" aria-hidden="true" aria-labelledby="ui-tab-537">
-                      <div id="weeklydist" class="shiny-plot-output shiny-bound-output" style="width:100%;height:400px;" aria-live="polite"></div>
+                    <div class="tab-pane" data-value="Weekly" id="tab-6373-2">
+                      <div id="weeklydist" class="shiny-plot-output" style="width:100%;height:400px;"></div>
                     </div>
-                    <div class="tab-pane" data-value="Historic" id="tab-4295-3" role="tabpanel" tabindex="-1" aria-hidden="true" aria-labelledby="ui-tab-542">
-                      <div id="historicdist" class="shiny-plot-output shiny-bound-output" style="width:100%;height:400px;" aria-live="polite"></div>
+                    <div class="tab-pane" data-value="Historic" id="tab-6373-3">
+                      <div id="historicdist" class="shiny-plot-output" style="width:100%;height:400px;"></div>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="col-sm-12">
                 <div class="nav-tabs-custom" style="height: auto">
-                  <ul class="nav nav-tabs shiny-tab-input shiny-bound-input" id="sleep" data-tabsetid="9647" role="tablist">
-                    <li class="active" role="presentation">
-                      <a href="#tab-9647-1" data-toggle="tab" data-value="Daily" role="tab" id="ui-tab-161" tabindex="0" aria-selected="true" aria-controls="tab-9647-1">Daily</a>
+                  <ul class="nav nav-tabs shiny-tab-input" id="sleep" data-tabsetid="1134">
+                    <li class="active">
+                      <a href="#tab-1134-1" data-toggle="tab" data-value="Daily">Daily</a>
                     </li>
-                    <li role="presentation">
-                      <a href="#tab-9647-2" data-toggle="tab" data-value="Weekly" role="tab" id="ui-tab-184" tabindex="-1" aria-selected="false" aria-controls="tab-9647-2">Weekly</a>
+                    <li>
+                      <a href="#tab-1134-2" data-toggle="tab" data-value="Weekly">Weekly</a>
                     </li>
-                    <li role="presentation">
-                      <a href="#tab-9647-3" data-toggle="tab" data-value="Historic" role="tab" id="ui-tab-346" tabindex="-1" aria-selected="false" aria-controls="tab-9647-3">Historic</a>
+                    <li>
+                      <a href="#tab-1134-3" data-toggle="tab" data-value="Historic">Historic</a>
                     </li>
-                    <li class="header pull-right" role="presentation">
+                    <li class="header pull-right">
                       <i class="fa fa-bed" role="presentation" aria-label="bed icon"></i>
                       Sleep
                     </li>
                   </ul>
-                  <div class="tab-content" data-tabsetid="9647">
-                    <div class="tab-pane active" data-value="Daily" id="tab-9647-1" role="tabpanel" tabindex="0" aria-hidden="false" aria-labelledby="ui-tab-161">
-                      <div id="dailysleep" class="shiny-plot-output shiny-bound-output" style="width:100%;height:400px;" aria-live="polite"></div>
+                  <div class="tab-content" data-tabsetid="1134">
+                    <div class="tab-pane active" data-value="Daily" id="tab-1134-1">
+                      <div id="dailysleep" class="shiny-plot-output" style="width:100%;height:400px;"></div>
                     </div>
-                    <div class="tab-pane" data-value="Weekly" id="tab-9647-2" role="tabpanel" tabindex="-1" aria-hidden="true" aria-labelledby="ui-tab-184">
-                      <div id="weeklysleep" class="shiny-plot-output shiny-bound-output" style="width:100%;height:400px;" aria-live="polite"></div>
+                    <div class="tab-pane" data-value="Weekly" id="tab-1134-2">
+                      <div id="weeklysleep" class="shiny-plot-output" style="width:100%;height:400px;"></div>
                     </div>
-                    <div class="tab-pane" data-value="Historic" id="tab-9647-3" role="tabpanel" tabindex="-1" aria-hidden="true" aria-labelledby="ui-tab-346">
-                      <div id="historicsleep" class="shiny-plot-output shiny-bound-output" style="width:100%;height:400px;" aria-live="polite"></div>
+                    <div class="tab-pane" data-value="Historic" id="tab-1134-3">
+                      <div id="historicsleep" class="shiny-plot-output" style="width:100%;height:400px;"></div>
                     </div>
                   </div>
                 </div>
@@ -552,6 +528,5 @@
       </section>
     </div>
   </div>
-
-
-<div id="ss-connect-dialog" style="display: none;"></div><div id="ss-overlay" class="ss-gray-out" style="display: none;"></div><div aria-live="assertive" role="log" aria-relevant="additions" aria-atomic="true" style="position: absolute; width: 1px; height: 1px; margin-top: -1px; clip: rect(1px, 1px, 1px, 1px); overflow: hidden;"></div><div aria-live="assertive" role="log" aria-relevant="additions" aria-atomic="true" style="position: absolute; width: 1px; height: 1px; margin-top: -1px; clip: rect(1px, 1px, 1px, 1px); overflow: hidden;"></div></body></html>
+</body>
+</html>

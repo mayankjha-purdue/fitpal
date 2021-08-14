@@ -1,0 +1,181 @@
+
+
+#continut{
+	
+	width: 90%;
+	font-size: 17px;
+		border: 1px;
+		padding: 10px;
+		background-color: #182628;
+		color:#65CCB8;
+		margin: auto;}
+		
+
+.listao,.listau{
+		
+		padding-left:15px;
+		margin-left:15px;
+		margin-top:10px;
+		
+}
+
+h2{
+	margin-top:20px;
+}
+		
+.lista >li{
+	padding:10px;
+	margin-top:10px;
+}
+		
+.galeriegrid{
+	margin-top:40px;
+		display:grid;
+		grid-template-columns:repeat(4,auto);
+		grid-template-rows: repeat(4,auto);
+		grid-gap: 15px;
+		
+		
+}
+
+.galeriegrid img{
+	width: 100%;
+	border:2px solid #86C832;
+
+    height: 100%;
+    object-fit: cover;
+}
+img:hover{
+	transition: .9s;
+		transform: scale(1.25);
+	box-shadow:0 25px 40px rgba(0,0,0,.5);
+}
+#item4{
+	
+	grid-row:1/3;
+	grid-column:2/4;
+	place-self:center;
+}
+
+#listegrid 
+{
+	display:grid;
+	grid-template-columns:auto auto;
+	grid-template-rows:auto auto auto;
+	grid-gap:10px;
+	
+}
+
+.liste {
+	width:100%;
+	border-width:2px; 
+	border-color:#86C832;
+	border-style:double;
+	object-fit:cover;
+	padding:10px;
+	
+	
+}
+
+
+.liste:nth-child(1){
+		grid-column-start:1;
+		grid-column-end:3;
+		place-self:center;
+		
+		
+}
+
+.liste:nth-child(4){
+	grid-column-start:1;
+		grid-column-end:3;
+		place-self:center;
+		
+}
+
+.commentbox h2{text-align:center;margin-bottom:15px;}
+
+.commentbox {
+	margin-top:20px;
+	width:600px;
+	padding : 15px 10px;
+}
+textarea{
+	width:100%;
+	height:100px;
+	border: none;
+	
+}
+
+.btn{
+	display: none;
+}
+
+input{
+	width:100px;
+	
+}
+
+input[type= "submit"], button {
+	padding: 10px 15px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+input[type= "submit"]{
+	color: #fff;
+	background-color: #273c75;
+}
+button{
+	background-color:transparent;
+	color: #fff;
+}
+
+@media screen and (max-width: 600px)
+{
+		.galeriegrid{
+	margin-top:40px;
+		display:grid;
+		grid-template-columns:repeat(2,auto);
+		grid-template-rows: repeat(2,auto);
+		grid-gap: 10px;
+		
+}
+	#item4{grid-row:1/2;
+	grid-column:2/3;
+	place-self:center;}
+	
+	#listegrid 
+{
+	display:grid;
+	grid-template-columns:auto;
+	grid-template-rows:auto ;
+	grid-gap:10px;
+	
+}
+
+header img{display:none;}
+
+.liste:nth-child(1){
+		grid-column-start:1;
+		grid-column-end:2;
+		place-self:center;
+		
+		
+}
+.liste:nth-child(4){
+	grid-column-start:1;
+		grid-column-end:2;
+		place-self:center;
+		
+}
+	
+}
+
+
+
+
+

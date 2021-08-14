@@ -1,0 +1,106 @@
+#heading{
+	width:85em;
+	height:5em;
+	margin-left:-0.625em;
+	margin-top:-7.875em;
+	background-color:#c70039;
+	position:fixed;
+}
+#backit{
+	height:2em;
+	width:2.25em;
+	margin-left:0.375em;
+	border:solid 0.0625em white;
+}
+
+#backit:hover{
+	height:2.625em;
+	width:2.875em;
+	border:none;
+}
+
+body{
+	background-color:white;
+}
+#tablevid{
+	width:80%;
+	height:7.4em;
+	background-color:white;
+}
+
+.sideshift{
+	width:10%;
+	height:100em;
+	background-color:#f5f0f0;
+}
+
+#lefty{
+	float:left;
+	margin-left:-0.6em;
+}
+
+#righty{
+	float:right;
+	margin-right:-0.6em;
+}
+.aevid{
+	width:12%;
+	height:2.3em;
+	margin-left:10em;
+	background-color:#c70039;
+	margin-top:2em;
+	color:white;
+	border-top-left-radius:1.5625em;
+	border-top-right-radius:1.5625em;
+}
+
+table{
+	width:76%;
+	height:80em;
+	margin:auto;
+	border:solid 0.125em #c70039;
+}
+.divex{
+	height:2.5em;
+	width:76%;
+	margin:auto;
+	background-color:#c70039;
+	margin-top:-0.625em;
+}
+td{
+	border-bottom:solid 0.125em #f0f0f0;
+	text-align:center;
+	height:15.625em;
+	vertical-align:top;
+	width:24%;
+	display:inline-block;
+}
+td:hover{
+	background-color:#f0dbe9;
+}
+
+#headimg{
+	width:15%;
+	height:5em;
+	margin-left:9em;
+}
+
+p{
+	text-align:left;
+	margin-left:0.875em;
+	margin-top:0.3125em;
+	font-size:0.8175em;
+	font-family:"Comic Sans MS",cursive;
+	font-weight:bold;
+	color:#704361;
+}
+h4{
+	text-align:center;
+	padding:0.485em 0.125em 0.125em 0.125em;
+}
+
+iframe{
+	border:none;
+	height:11.25em;
+	width:88%;
+}

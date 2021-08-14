@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="teamx.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="teams.css" type="text/css">
+    <script src="gameweb.js" type="text/javascript"></script>
+
+    <nav id="nav">
+    	<div class="container_left">
+    		<a class="home" href="index.html"> <!--style="margin:0 auto; display: block;" -->
+    			<img id="homebutton" src="fitpal_logo.png">
+    		</a>
+    		<button id="btnMenu" onclick="openMenu()">
+    			<i class="fa fa-bars"></i>
+    			<i class="fa fa-close"></i>
+    		</button>
+    	</div>
+    	<div class="container_menu" id="thisMenu">
+    		<div class="container_list">
+    			<button class="btnList" onclick="openList('1')">
+    				<span class="drop">About Us</span>
+    			</button>
+    			<div class="content_list left" id="thisList_1">
+    				<p><a href="index_about.html" class="button">About</a></p>
+    			</div>
+    		</div>
+    		<div class="container_list">
+    			<button class="btnList" onclick="openList('2')">
+    				<span class="drop">Get Started</span>
+    			</button>
+    			<div class="content_list left" id="thisList_2">
+
+					<p><a target="_blank"  href="index_2.html">View Activity</a><br></p>
+
+    			</div>
+    		</div>
+    		<div class="container_list">
+    			<button class="btnList" onclick="openList('3')">
+    				<span class="drop" id="lala"> Goal Setting </span>
+    			</button>
+    			<div class="content_list center" id="thisList_3">
+    				<p><a href="predict_home.html">Monitor Goals</a><br></p>
+    			</div>
+    		</div>
+    		<div class="container_list">
+    			<button class="btnList" onclick="openList('4')">
+    				<span class="drop">Suggestions</span>
+    				<span class="acc">Accordion 4</span>
+    			</button>
+    			<div class="content_list right" id="thisList_4">
+    				<p><a href="nutrition.html">Nutritional sugesstions</a><br><a href="exercise.html">Suggested Activities</a></p>
+    			</div>
+    		</div>
+    		<div class="container_list">
+    			<button class="btnList" onclick="openList('5')">
+    				<span class="drop">Meet the Team</span>
+    				<span class="acc">Accordion 5</span>
+    			</button>
+    			<div class="content_list right" id="thisList_5">
+    				<p><a href="meet-the-team.html">The Team</a><br></p>
+    			</div>
+    		</div>
+    	</div>
+    	<div class="container_right">
+    		<div class="content_search" id="thisSearch">
+    			<form><input type="text" placeholder="Search..."></form>
+    		</div>
+    		<button id="btnSearch" onclick="openSearch()">
+    			<i class="fa fa-search"></i>
+    			<i class="fa fa-close"></i>
+    		</button>
+    	</div>
+      <div>
+        <audio id="playlist">
+          <source src="Yuri.mp3" id="mp3Source" type="audio/mpeg" />
+          <source src="howl.mp3" id="mp3Source" type="audio/mpeg" />
+          <source src="killua.mp3" id="mp3Source" type="audio/mpeg" />
+          <source src="gin.mp3" id="mp3Source" type="audio/mpeg" />
+          <source src="rain.mp3" id="mp3Source" type="audio/mpeg" />
+          <source src="river.mp3" id="mp3Source" type="audio/mpeg" />
+          <source src="UT.mp3" id="mp3Source" type="audio/mpeg" />
+          <source src="clair.mp3" id="mp3Source" type="audio/mpeg" />
+          <p>If you are seeing this, the audio player is unsupported in this browser.</p>
+        </audio>
+        <div>
+            <button onclick="document.getElementById('playlist').play()">Play Music</button>
+            <button onclick="document.getElementById('playlist').pause()">Pause</button>
+            <button onclick="document.getElementById('playlist').muted=!document.getElementById('playlist').muted">Mute/Unmute</button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="title">
+
+<h2 style="color:#ADD8E6">Our Amazing Team Consisting of  <span class="typing" style="font-weight: 400; color:#ADD8E6"></span></h2>
+    </div>
+
+
+
+        <div class="blank">
+            <p id="bruh">
+       <br>Meet our FitPal Development Team! The group was created as a part of the coursework Using R for Analystics MGMT590-URA<br>
+	  </p><br><br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 col-sm-5" style="width: 12.499999995%;
+    flex: 0 0 18.499%;max-width: 18.499%;">
+                <div class="our-team">
+                    <div class="pic">
+                        <img src="assets/img/mayank.jpg" style="width:110px;height:110px;">
+                    </div>
+                    <h3 class="title">Mayank</h3>
+                    <span class="post">MS-BAIM 2021</span>
+                    <ul class="social">
+                        <li><a href="https://www.linkedin.com/in/mayank-jha-34479154/" class="fa fa-linkedin"></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-2 col-sm-5" style="width: 12.499999995%;
+    flex: 0 0 18.499%;max-width: 18.499%;">
+                <div class="our-team">
+                    <div class="pic">
+                        <img src="assets/img/akshit.png" style="width:110px;height:110px;">
+                    </div>
+                    <h3 class="title">Akshit</h3>
+                    <span class="post">Supply Chain 2021</span>
+                    <ul class="social">
+                        <li><a href="https://www.linkedin.com/in/akshitjain1991/" class="fa fa-linkedin"></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-2 col-sm-5" style="width: 12.499999995%;
+    flex: 0 0 18.499%;max-width: 18.499%;">
+                <div class="our-team">
+                    <div class="pic">
+                        <img src="assets/img/piper.png" style="width:110px;height:110px;">
+                    </div>
+                    <h3 class="title">Piper</h3>
+                    <span class="post">MS-BAIM 2022</span>
+                    <ul class="social">
+                        <li><a href="https://www.linkedin.com/in/piperdoyle/" class="fa fa-linkedin"></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-2 col-sm-5" style="width: 12.499999995%;
+    flex: 0 0 18.499%;max-width: 18.499%;">
+                <div class="our-team">
+                    <div class="pic">
+                        <img src="assets/img/alex.jpg" style="width:110px;height:110px;">
+                    </div>
+                    <h3 class="title">Alejandro</h3>
+                    <span class="post">MS-BAIM 2022</span>
+                    <ul class="social">
+                        <li><a href="https://www.linkedin.com/in/alejandrobrillembourg/" class="fa fa-linkedin"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-5" style="width: 12.499999995%;
+    flex: 0 0 18.499%;max-width: 18.499%;">
+                <div class="our-team">
+                    <div class="pic">
+                        <img src="assets/img/harshul.jpeg" style="width:110px;height:110px;">
+                    </div>
+                    <h3 class="title">Harshul</h3>
+                    <span class="post">MS-BAIM 2021</span>
+                    <ul class="social">
+                        <li><a href="https://www.linkedin.com/in/harshulgarg/" class="fa fa-linkedin"></a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+        </div>
+            <div class="blank">
+            <p id="bruh">
+	  </p><br><br>
+
+     <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script type="text/javascript">
+    var typed = new Typed('.typing',{
+      strings: ["Mayank", "Akshit", "Piper","Alejandro","Harshul"],
+      loop: true,
+      typeSpeed: 80,
+      backSpeed: 40
+    });
+  </script>
+</head>
+</html>

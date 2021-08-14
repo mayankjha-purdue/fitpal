@@ -1,0 +1,13 @@
+name: home
+title: home
+username:
+account: fitpalapp
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 4491285
+bundleId: 4922432
+url: https://fitpalapp.shinyapps.io/home/
+when: 1628926668.38517
+lastSyncTime: 1628926668.38519
+asMultiple: FALSE
+asStatic: FALSE
