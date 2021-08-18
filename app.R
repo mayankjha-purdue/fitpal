@@ -18,82 +18,6 @@ library(bslib)
 library(writexl)
 library(tidyr)
 
-
-
- # Define server logic for random distribution app ----
-# server <- function(input, output) {
-# 
-#     output$contents <- renderTable({
-# 
-#     # input$file1 will be NULL initially. After the user selects
-#     # and uploads a file, head of that data file by default,
-#     # or all rows if selected, will be shown.
-# 
-#     req(input$file1)
-# 
-#     # when reading semicolon separated files,
-#     # having a comma separator causes `read.csv` to error
-#     tryCatch(
-#       {
-#         df <- read.csv(input$file1$datapath,
-#                  header = input$header,
-#                  sep = input$sep,
-#                  quote = input$quote)
-#       },
-#       error = function(e) {
-#         # return a safeError if a parsing error occurs
-#         stop(safeError(e))
-#       }
-#     )
-# 
-#     if(input$disp == "head") {
-#       return(head(df))
-#     }
-#     else {
-#       return(df)
-#     }
-# 
-#   })
-# 
-#   # Reactive expression to generate the requested distribution ----
-#   # This is called whenever the inputs change. The output functions
-#   # defined below then use the value computed from this expression
-#   d <- reactive({
-#     dist <- switch(input$dist,
-#                    norm = rnorm,
-#                    unif = runif,
-#                    lnorm = rlnorm,
-#                    exp = rexp,
-#                    rnorm)
-# 
-#     dist(input$n)
-#   })
-# 
-#   # Generate a plot of the data ----
-#   # Also uses the inputs to build the plot label. Note that the
-#   # dependencies on the inputs and the data reactive expression are
-#   # both tracked, and all expressions are called in the sequence
-#   # implied by the dependency graph.
-#   output$plot <- renderPlot({
-#     dist <- input$dist
-#     n <- input$n
-# 
-#     hist(d(),
-#          main = paste("r", dist, "(", n, ")", sep = ""),
-#          col = "#75AADB", border = "white")
-#   })
-# 
-#   # Generate a summary of the data ----
-#   output$summary <- renderPrint({
-#     summary(d())
-#   })
-# 
-#   # Generate an HTML table view of the head of the data ----
-#   output$table <- renderTable({
-#     head(data.frame(x = d()))
-#   })
-# 
-# }
  
  # install.packages('rsconnect')
  # library(rsconnect)
@@ -103,13 +27,6 @@ library(tidyr)
  
  server <- function(input, output) {
    
-   # output$txtout <- renderText({
-   #   paste(input$txt, input$slider, format(input$date), sep = ", ")
-   # })
-   # output$table <- renderTable({
-   #   head(cars, 4)
-   # })
-   #Welcome text
    #Welcome text
    output$welcome <- renderText({
      if (input$name == ""){
@@ -175,6 +92,7 @@ library(tidyr)
      print(str(hsteps))
      hsteps$ActivityHour <- as.POSIXct(hsteps$ActivityHour, format="%Y-%m-%d")
      hsteps<- subset(hsteps, ActivityHour> "2016-05-12")
+     hsteps
    })
    
    # hourly steps graph
@@ -204,6 +122,7 @@ library(tidyr)
      print(str(dsteps))
      dsteps$ActivityDay <- as.POSIXct(dsteps$ActivityDay, format = "%Y-%m-%d")
      weeklysteps <- subset(dsteps, ActivityDay > "2016-05-05")
+     weeklysteps
    })
    
    # daily steps graph
@@ -222,16 +141,15 @@ library(tidyr)
    historicSteps <- reactive({
      input$action
      if (is.null(input$user_data) == F) {
-       dsteps <- read_excel(input$user_data$datapath, sheet = "dailySteps")
+       histeps <- read_excel(input$user_data$datapath, sheet = "dailySteps")
      }
      else {
-       dsteps <- read_excel("Joined_Dataset_V2.xlsx", sheet = "dailySteps")
+       histeps <- read_excel("Joined_Dataset_V2.xlsx", sheet = "dailySteps")
      }
-     dsteps <- as.data.frame(dsteps)
-     print(str(dsteps))
-     dsteps
-     # dsteps$ActivityDay <- as.POSIXct(dsteps$ActivityDay, format = "%Y-%m-%d")
-     # dsteps <- subset(dsteps, ActivityDay > "2016-05-05")
+     histeps <- as.data.frame(histeps)
+     print(str(histeps))
+     histeps
+
    })
    
    # historic steps graph
@@ -259,6 +177,7 @@ library(tidyr)
      print(str(hcal))
      hcal$ActivityHour <- as.POSIXct(hcal$ActivityHour, format="%Y-%m-%d")
      hcal<- subset(hcal, ActivityHour> "2016-05-12")
+     hcal
    })
    
    # hourly calories graph
@@ -288,6 +207,7 @@ library(tidyr)
      print(str(wcal))
      wcal$ActivityDate <-as.POSIXct(wcal$ActivityDate, format = "%Y-%m-%d")
      wcal <- subset(wcal, ActivityDate > "2016-05-06")
+     wcal
    })
    
    # weekly calories graph
@@ -314,8 +234,6 @@ library(tidyr)
      histcal <- as.data.frame(histcal)
      print(str(histcal))
      histcal
-     # histcal$ActivityDate <- as.POSIXct(histcal$ActivityDate, format = "%Y-%m-%d")
-     # histcal <- subset(histcal, ActivityDate > "2016-05-06")
    })
    
    # historical calories graph
@@ -343,6 +261,7 @@ library(tidyr)
      print(str(dint))
      dint$ActivityHour <- as.POSIXct(dint$ActivityHour, format = "%Y-%m-%d")
      dint <- subset(dint, ActivityHour > "2016-05-06")
+     dint
    })
    
    # daily intensity graph
@@ -372,6 +291,7 @@ library(tidyr)
      wint <- subset(wint, ActivityDay > "2016-05-06")
      wint <- wint %>% select(ActivityDay, LightlyActiveMinutes, FairlyActiveMinutes, VeryActiveMinutes) %>%  data.frame()
      wint <- melt(wint, id.vars = c("ActivityDay"))
+     wint
    })
    
    # weekly intensity graph
@@ -398,6 +318,7 @@ library(tidyr)
      # hint <- subset(hint, ActivityDay > "2016-05-06")
      hint <- hint %>% select(ActivityDay, LightlyActiveMinutes, FairlyActiveMinutes, VeryActiveMinutes) %>%  data.frame()
      hint <- melt(hint, id.vars = c("ActivityDay"))
+     hint
    })
    
    # historic intensity graph
@@ -425,6 +346,7 @@ library(tidyr)
      wdist <- subset(wdist, ActivityDate > "2016-05-06")
      wdist <- wdist %>% select(ActivityDate, VeryActiveDistance, ModeratelyActiveDistance, LightActiveDistance) %>%  data.frame()
      wdist <- melt(wdist, id.vars = c("ActivityDate"))
+     wdist
    })
    
    # weekly distance graph
@@ -448,10 +370,9 @@ library(tidyr)
      }
      hdist <- as.data.frame(hdist)
      print(str(hdist))
-     # hint$ActivityDay <- as.POSIXct(hint$ActivityDay, format = "%Y-%m-%d")
-     # hint <- subset(hint, ActivityDay > "2016-05-06")
      hdist <- hdist %>% select(ActivityDate, VeryActiveDistance, ModeratelyActiveDistance, LightActiveDistance) %>%  data.frame()
      hdist <- melt(hdist, id.vars = c("ActivityDate"))
+     hdist
    })
    
    # historic distance graph
@@ -483,6 +404,7 @@ library(tidyr)
      dsleep <- dsleep %>% transmute(Hour_number = as.numeric(Hour_number), Num = ifelse(is.na(Days), 0, 1))
      dsleep <- as.data.frame(dsleep)
      print(str(dsleep))
+     dsleep
    })
    
    # daily sleep graph
@@ -511,6 +433,7 @@ library(tidyr)
      wsleep <- subset(wsleep, SleepDay > "2016-05-05")
      wsleep <- as.data.frame(wsleep)
      print(str(wsleep))
+     wsleep
    })
    
    # weekly sleep graph
@@ -539,6 +462,7 @@ library(tidyr)
      hsleep <- subset(hsleep, SleepDay > "2016-05-05")
      hsleep <- as.data.frame(hsleep)
      print(str(hsleep))
+     hsleep
    })
    
    # historic sleep graph
